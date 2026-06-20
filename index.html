@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SHOT Clubhouse — Investment Introduction</title>
+<title>SHOT Clubhouse: Investment Introduction</title>
 <meta name="description" content="SHOT Clubhouse is building the verified identity and digital home for every athlete, coach and club on the planet. SEIS & EIS Advance Assurance. £16M pre-money.">
 <link rel="icon" type="image/png" href="https://shotclubhouse.com/shot-logo.png">
 <link rel="apple-touch-icon" href="https://shotclubhouse.com/shot-logo.png">
@@ -74,11 +74,14 @@ td:first-child { color: #fff; font-weight: 500; }
 td.num { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: #1ABC9C; letter-spacing: 0.04em; white-space: nowrap; }
 
 /* Partner logos */
-.partner-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-top: 1.75rem; align-items: stretch; }
-.partner-card { border: 1px solid rgba(255,255,255,0.07); border-radius: 0.75rem; padding: 1.5rem; background: rgba(255,255,255,0.02); display: flex; flex-direction: column; gap: 0.85rem; }
-.partner-card img { height: 52px; width: auto; object-fit: contain; object-position: left; }
-.partner-card p { font-size: 0.82rem; color: #9CA3AF; line-height: 1.6; flex: 1; }
-.partner-stat { font-family: 'Bebas Neue', sans-serif; font-size: 1.1rem; color: #1ABC9C; letter-spacing: 0.04em; }
+.partner-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.25rem; margin-top: 1.75rem; align-items: stretch; }
+.partner-card { border: 1px solid rgba(255,255,255,0.07); border-radius: 0.75rem; padding: 0; background: rgba(255,255,255,0.02); display: flex; flex-direction: column; overflow: hidden; }
+.partner-img-box { width: 100%; height: 110px; background: rgba(255,255,255,0.03); border-bottom: 1px solid rgba(255,255,255,0.06); display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; }
+.partner-img-box img { max-width: 80%; max-height: 80px; width: auto; height: auto; object-fit: contain; display: block; }
+.partner-img-box img.cover { max-width: 100%; max-height: 100%; width: 100%; height: 100%; object-fit: cover; object-position: top; }
+.partner-body { padding: 1.1rem 1.25rem 1.25rem; display: flex; flex-direction: column; gap: 0.5rem; flex: 1; }
+.partner-card p { font-size: 0.82rem; color: #9CA3AF; line-height: 1.6; }
+.partner-stat { font-family: 'Bebas Neue', sans-serif; font-size: 1rem; color: #1ABC9C; letter-spacing: 0.04em; line-height: 1.2; }
 
 /* Proof bullets */
 .proof-list { list-style: none; padding: 0; margin: 1.25rem 0 0; display: flex; flex-direction: column; gap: 0.7rem; }
@@ -141,7 +144,7 @@ td.num { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: #1ABC9
 @media (max-width: 640px) {
   .phone-row { grid-template-columns: 1fr 1fr; }
   .phone-row img:last-child { display: none; }
-  .partner-row { grid-template-columns: 1fr; }
+  .partner-row { grid-template-columns: 1fr; gap: 1rem; }
   .team-grid { grid-template-columns: 1fr; }
   .jack-card { grid-template-columns: 1fr; }
   .jack-card img { height: 220px; }
@@ -207,13 +210,13 @@ td.num { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: #1ABC9
   <div class="sec">
     <div class="label">What We've Built</div>
     <h2 class="sec-heading">THE PLATFORM.<br><span style="color:#a78bfa;">THE IDENTITY.<br>THE INFRASTRUCTURE.</span></h2>
-    <p class="body-text"><strong style="color:#fff;">Sport Head ID</strong> — a verified, portable identity for every athlete, coach, and club. Issued for life. Registered trademark. Patentable architecture. Children's Code compliant from day one.</p>
+    <p class="body-text"><strong style="color:#fff;">Sport Head ID</strong> is a verified, portable identity for every athlete, coach, and club. Issued for life. Registered trademark. Patentable architecture. Children's Code compliant from day one.</p>
     <div class="phone-row">
       <img src="https://pitchdeck.shotclubhouse.com/Phone%20Mockup%20-%20Sport%20Head%20Creator%20Customise.png" alt="Sport Head ID Creator" loading="lazy">
       <img src="https://pitchdeck.shotclubhouse.com/Phone%20Mockup%20-%20Home%20Screen%20Pitch.png" alt="SHOT Clubhouse Home Screen" loading="lazy">
       <img src="https://pitchdeck.shotclubhouse.com/Phone%20Mockup%20-%20Perform%20Pre%20Post%20Confidence%20Evaluations.png" alt="PERFORM evaluations" loading="lazy">
     </div>
-    <p class="body-text" style="margin-top:1.75rem;"><strong style="color:#fff;">The Clubhouse</strong> — four rooms in one platform:</p>
+    <p class="body-text" style="margin-top:1.75rem;"><strong style="color:#fff;">The Clubhouse</strong> has four rooms in one platform:</p>
     <div class="product-grid">
       <div class="product-item">
         <div class="product-name">PERFORM</div>
@@ -255,7 +258,7 @@ td.num { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: #1ABC9
           <tr>
             <td>Total Market</td>
             <td class="num">£500B+</td>
-            <td>Global sports participation economy — athletes, clubs, governing bodies, technology, content, data</td>
+            <td>Global sports participation economy: athletes, clubs, governing bodies, technology, content, data</td>
           </tr>
           <tr>
             <td>Our Market</td>
@@ -274,9 +277,9 @@ td.num { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: #1ABC9
     <div style="margin-top:2rem;">
       <div class="label" style="margin-bottom:0.75rem;">Why Now</div>
       <ul class="why-list">
-        <li><strong>Regulatory acceleration</strong> — the UK Children's Code is already in force, with access tightening for teens on mainstream platforms. SHOT is compliant from day one.</li>
-        <li><strong>The identity gap is real</strong> — over 100,000 registered sports clubs in the UK alone. None of them have a portable identity layer for their athletes.</li>
-        <li><strong>Content platforms are under pressure</strong> — TikTok and Instagram are advertising platforms. Parents, regulators, and athletes are looking for an alternative.</li>
+        <li><strong>Regulatory acceleration.</strong> The UK Children's Code is already in force, with access tightening for teens on mainstream platforms. SHOT is compliant from day one.</li>
+        <li><strong>The identity gap is real.</strong> Over 100,000 registered sports clubs in the UK alone. None of them have a portable identity layer for their athletes.</li>
+        <li><strong>Content platforms are under pressure.</strong> TikTok and Instagram are advertising platforms. Parents, regulators, and athletes are looking for an alternative.</li>
       </ul>
     </div>
   </div>
@@ -289,8 +292,8 @@ td.num { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: #1ABC9
     <h2 class="sec-heading">NOT AN IDEA.<br><span style="color:#1ABC9C;">ALREADY OPERATING.</span></h2>
     <ul class="proof-list">
       <li>80,000+ Sport Head IDs &amp; Clubhouse memberships deploying</li>
-      <li>United Nations Football for the Goals member — 120 countries, 450+ sport organisations. Global strategic opportunity</li>
-      <li>Sported Foundation Power of Six — 5,000 UK clubs, 500,000 young people</li>
+      <li>United Nations Football for the Goals member. 120 countries, 450+ sport organisations. Global strategic opportunity</li>
+      <li>Sported Foundation Power of Six. 5,000 UK clubs, 500,000 young people</li>
       <li>47 grant applications already received from federations and clubs across 6 continents</li>
       <li>Active paying clients. Competitors switching from ClassforKids and Player 360 to SHOT</li>
       <li>900+ creator applications for PULSE</li>
@@ -300,14 +303,31 @@ td.num { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: #1ABC9
 
     <div class="partner-row" style="margin-top:2rem;">
       <div class="partner-card">
-        <img src="https://www.un.org/sites/un2.un.org/files/fftg_web_banner-02_0.png" alt="UN Football for the Goals">
-        <div class="partner-stat">120 Countries · 450+ Organisations</div>
-        <p>UN Football for the Goals member. The global strategic distribution layer for Sport Head ID.</p>
+        <div class="partner-img-box">
+          <img src="https://www.un.org/sites/un2.un.org/files/fftg_web_banner-02_0.png" alt="UN Football for the Goals">
+        </div>
+        <div class="partner-body">
+          <div class="partner-stat">120 Countries · 450+ Organisations</div>
+          <p>UN Football for the Goals member. The global strategic distribution layer for Sport Head ID.</p>
+        </div>
       </div>
       <div class="partner-card">
-        <img src="https://sported.org.uk/wp-content/uploads/2025/09/header-logo.svg" alt="Sported Foundation">
-        <div class="partner-stat">5,000 Clubs · 500,000 Young People</div>
-        <p>Sported Foundation Power of Six — the UK's leading grassroots sport network.</p>
+        <div class="partner-img-box">
+          <img src="https://sported.org.uk/wp-content/uploads/2025/09/header-logo.svg" alt="Sported Foundation">
+        </div>
+        <div class="partner-body">
+          <div class="partner-stat">5,000 Clubs · 500,000 Young People</div>
+          <p>Sported Foundation Power of Six, the UK's leading grassroots sport network.</p>
+        </div>
+      </div>
+      <div class="partner-card">
+        <div class="partner-img-box">
+          <img src="https://lirp.cdn-website.com/6cd4ff6a/dms3rep/multi/opt/NEW+AR+homepage+image+1-1920w.png" alt="Ferdinand Collective" class="cover">
+        </div>
+        <div class="partner-body">
+          <div class="partner-stat">Ferdinand Collective</div>
+          <p>Active client. Running PERFORM across their grassroots coaching programmes. Paying from August 2026.</p>
+        </div>
       </div>
     </div>
 
@@ -392,7 +412,7 @@ td.num { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: #1ABC9
           <div>
             <div class="team-name">Mark Beard</div>
             <div class="team-role" style="color:#F7B613;">Ambassador &amp; Shareholder</div>
-            <div class="team-bio">Professional boxer and community champion.</div>
+            <div class="team-bio">Premier League academy coach and former professional footballer.</div>
           </div>
         </div>
         <div class="team-card">
@@ -400,7 +420,7 @@ td.num { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: #1ABC9
           <div>
             <div class="team-name">Varsha Bailey-Gunputh</div>
             <div class="team-role" style="color:#F7B613;">Ambassador &amp; Shareholder</div>
-            <div class="team-bio">Sports presenter and broadcaster.</div>
+            <div class="team-bio">Award-winning Lioness Under-16 goalkeeper coach.</div>
           </div>
         </div>
         <div class="team-card">
@@ -408,7 +428,7 @@ td.num { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: #1ABC9
           <div>
             <div class="team-name">Eilish Tierney</div>
             <div class="team-role" style="color:#F7B613;">Ambassador &amp; Shareholder</div>
-            <div class="team-bio">Fitness professional and content creator.</div>
+            <div class="team-bio">Suffolk's first professional female boxer. Britain's trailblazer.</div>
           </div>
         </div>
       </div>
@@ -490,7 +510,7 @@ td.num { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: #1ABC9
         <img src="https://pitchdeck.shotclubhouse.com/Liam%20McDowell%20-%20Headshot%20SHOT%20Cap%20Teal.png" alt="Liam McDowell" class="contact-avatar">
         <div>
           <div class="contact-name">Liam McDowell</div>
-          <div class="contact-role">Founder &amp; CEO</div>
+          <div class="contact-role">Founder</div>
           <div class="contact-line"><a href="mailto:liam@shotclubhouse.com">liam@shotclubhouse.com</a></div>
         </div>
       </div>
