@@ -104,8 +104,9 @@ td.num { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: #1ABC9
 .team-bio { font-size: 0.8rem; color: #9CA3AF; line-height: 1.6; }
 
 /* Jack */
-.jack-card { display: grid; grid-template-columns: 200px 1fr; gap: 2rem; align-items: start; margin-top: 1.5rem; border: 1px solid rgba(247,182,19,0.15); border-radius: 0.75rem; overflow: hidden; background: rgba(247,182,19,0.03); }
-.jack-card img { width: 100%; height: 280px; object-fit: cover; object-position: top; }
+.jack-card { display: grid; grid-template-columns: 200px 1fr; gap: 0; align-items: start; margin-top: 1.5rem; border: 1px solid rgba(167,139,250,0.35); border-radius: 0.75rem; overflow: hidden; background: rgba(107,0,219,0.04); }
+.jack-img-wrap { padding: 1rem 0 1rem 1rem; }
+.jack-card img { width: 100%; height: auto; display: block; border-radius: 0.5rem; object-fit: contain; }
 .jack-info { padding: 1.5rem 1.5rem 1.5rem 0; }
 .jack-name { font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; color: #F7B613; letter-spacing: 0.05em; line-height: 0.95; }
 .jack-sub { font-size: 0.75rem; color: #9CA3AF; margin: 0.4rem 0 0.85rem; }
@@ -384,7 +385,7 @@ td.num { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: #1ABC9
     <div style="margin-top:2.5rem;">
       <div class="label" style="color:#F7B613;">Key Ambassadors</div>
       <div class="jack-card">
-        <img src="https://cws.ferdinandcollective.com/JH.jpeg" alt="Jack Hinshelwood">
+        <div class="jack-img-wrap"><img src="https://cws.ferdinandcollective.com/JH.jpeg" alt="Jack Hinshelwood"></div>
         <div class="jack-info">
           <div class="jack-name">JACK HINSHELWOOD</div>
           <div class="jack-sub">Brighton &amp; Hove Albion, Premier League · England Under-21 · Championship Euro Winner</div>
