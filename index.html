@@ -23,19 +23,13 @@ p, li { line-height: 1.7; }
 a { color: #1ABC9C; text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-.page { max-width: 860px; margin: 0 auto; padding: 0 1.5rem; }
-
-/* Rule line */
-.rule { border: none; border-top: 1px solid rgba(255,255,255,0.1); margin: 0; }
-
-/* Section spacing */
+.page { max-width: 880px; margin: 0 auto; padding: 0 1.5rem; }
+.rule { border: none; border-top: 1px solid rgba(255,255,255,0.08); margin: 0; }
 .sec { padding: 3.5rem 0; }
-.sec:first-child { padding-top: 0; }
 
-/* Labels */
 .label {
   font-family: 'Inter', sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -43,136 +37,116 @@ a:hover { text-decoration: underline; }
   margin-bottom: 1rem;
 }
 
-/* Tables */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 1.25rem;
-}
-th {
-  font-family: 'Inter', sans-serif;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #6B7280;
-  text-align: left;
-  padding: 0.65rem 1rem;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-}
-td {
-  font-size: 0.9rem;
-  color: #CBD5E0;
-  padding: 0.85rem 1rem;
-  vertical-align: top;
-  border-bottom: 1px solid rgba(255,255,255,0.05);
-  line-height: 1.5;
-}
-tr:last-child td { border-bottom: none; }
-td:first-child { color: #fff; font-weight: 500; }
-td.num { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: #1ABC9C; letter-spacing: 0.05em; white-space: nowrap; padding-top: 1rem; padding-bottom: 1rem; }
-.table-wrap {
-  background: rgba(255,255,255,0.02);
-  border: 1px solid rgba(255,255,255,0.07);
-  border-radius: 0.75rem;
-  overflow: hidden;
-}
-
-/* Proof bullets */
-.proof-list { list-style: none; padding: 0; margin: 1.25rem 0 0; display: flex; flex-direction: column; gap: 0.7rem; }
-.proof-list li { display: flex; gap: 0.85rem; align-items: flex-start; font-size: 0.92rem; color: #CBD5E0; }
-.proof-list li::before { content: ''; display: block; width: 6px; height: 6px; border-radius: 50%; background: #1ABC9C; margin-top: 0.55rem; flex-shrink: 0; }
-
-/* Team list */
-.team-list { list-style: none; padding: 0; margin: 1.25rem 0 0; display: flex; flex-direction: column; gap: 0; }
-.team-list li { padding: 0.95rem 0; border-bottom: 1px solid rgba(255,255,255,0.05); font-size: 0.9rem; color: #CBD5E0; line-height: 1.6; }
-.team-list li:last-child { border-bottom: none; }
-.team-name { font-family: 'Inter', sans-serif; font-weight: 600; color: #fff; }
-.team-role { color: #1ABC9C; font-size: 0.8rem; font-weight: 500; margin-right: 0.4rem; }
-
-/* Blockquote */
-.bq {
-  margin: 1.75rem 0 0;
-  padding: 1.25rem 1.5rem;
-  border-left: 3px solid #1ABC9C;
-  background: rgba(26,188,156,0.04);
-  border-radius: 0 0.5rem 0.5rem 0;
-}
-.bq p { font-size: 0.92rem; color: #CBD5E0; font-style: italic; line-height: 1.7; }
-.bq cite { display: block; margin-top: 0.5rem; font-size: 0.78rem; font-style: normal; font-weight: 600; color: #1ABC9C; letter-spacing: 0.04em; }
-
-/* Investment table highlight */
-.inv-key td:first-child { color: #F7B613; }
-.inv-key td.num { color: #F7B613; }
-
-/* Round stat bar */
-.round-stats { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1px; background: rgba(255,255,255,0.07); border-radius: 0.75rem; overflow: hidden; margin-bottom: 1.25rem; }
-.round-stat { background: #000; padding: 1.5rem 1.25rem; }
-.round-stat-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #6B7280; margin-bottom: 0.3rem; }
-.round-stat-val { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; color: #fff; letter-spacing: 0.04em; line-height: 1; }
-.round-stat-sub { font-size: 0.72rem; color: #6B7280; margin-top: 0.25rem; }
-
-/* CTA */
-.cta-block { margin-top: 2rem; padding: 2rem; background: rgba(26,188,156,0.05); border: 1px solid rgba(26,188,156,0.15); border-radius: 0.75rem; }
-.cta-line { display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem; color: #CBD5E0; padding: 0.3rem 0; }
-.cta-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #6B7280; min-width: 80px; }
-
-/* Header / Cover */
-.cover {
-  padding: 4rem 0 3rem;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-  margin-bottom: 0;
-}
-.cover-meta { font-size: 0.78rem; color: #6B7280; margin-top: 0.75rem; line-height: 1.9; }
-.cover-pills { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.25rem; }
-.pill {
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  padding: 0.35rem 0.85rem;
-  border-radius: 2rem;
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.1);
-  color: #9CA3AF;
-}
-.pill.teal { background: rgba(26,188,156,0.1); border-color: rgba(26,188,156,0.3); color: #1ABC9C; }
-.pill.gold { background: rgba(247,182,19,0.08); border-color: rgba(247,182,19,0.25); color: #F7B613; }
-.pill.purple { background: rgba(107,0,219,0.1); border-color: rgba(107,0,219,0.3); color: #a78bfa; }
-
-/* Section heading */
-.sec-heading {
-  font-size: clamp(1.6rem, 4vw, 2.4rem);
-  line-height: 0.95;
-  margin-bottom: 1.5rem;
-  color: #fff;
-}
-
-/* Body text */
 .body-text { font-size: 0.93rem; color: #CBD5E0; line-height: 1.75; }
 .body-text + .body-text { margin-top: 0.85rem; }
 
+/* Pills */
+.cover-pills { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.25rem; }
+.pill { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.35rem 0.85rem; border-radius: 2rem; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); color: #9CA3AF; }
+.pill.teal { background: rgba(26,188,156,0.1); border-color: rgba(26,188,156,0.3); color: #1ABC9C; }
+.pill.gold { background: rgba(247,182,19,0.08); border-color: rgba(247,182,19,0.25); color: #F7B613; }
+
+/* Section heading */
+.sec-heading { font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 0.93; margin-bottom: 1.5rem; }
+
+/* Sport Head icon strip */
+.sport-strip { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; margin-top: 1.75rem; }
+.sport-strip img { height: 64px; width: auto; opacity: 0.85; filter: drop-shadow(0 0 8px rgba(26,188,156,0.2)); }
+
+/* Phone mockups */
+.phone-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 1.75rem; }
+.phone-row img { width: 100%; border-radius: 0.75rem; object-fit: contain; background: rgba(255,255,255,0.02); }
+
 /* Product blocks */
-.product-item { padding: 1rem 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+.product-grid { border: 1px solid rgba(255,255,255,0.07); border-radius: 0.75rem; overflow: hidden; background: rgba(255,255,255,0.02); margin-top: 1.25rem; }
+.product-item { padding: 1.1rem 1.4rem; border-bottom: 1px solid rgba(255,255,255,0.05); }
 .product-item:last-child { border-bottom: none; }
-.product-name { font-family: 'Bebas Neue', sans-serif; font-size: 1.1rem; color: #a78bfa; letter-spacing: 0.08em; margin-bottom: 0.3rem; }
-.product-desc { font-size: 0.88rem; color: #9CA3AF; line-height: 1.65; }
+.product-name { font-family: 'Bebas Neue', sans-serif; font-size: 1.05rem; color: #a78bfa; letter-spacing: 0.08em; margin-bottom: 0.25rem; }
+.product-desc { font-size: 0.86rem; color: #9CA3AF; line-height: 1.65; }
 
-/* Legal footer */
-.legal { padding: 2.5rem 0; border-top: 1px solid rgba(255,255,255,0.07); }
-.legal p { font-size: 0.75rem; color: #4B5563; line-height: 1.65; }
+/* Table */
+.table-wrap { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.07); border-radius: 0.75rem; overflow: hidden; margin-top: 1.5rem; }
+table { width: 100%; border-collapse: collapse; }
+th { font-family: 'Inter', sans-serif; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #6B7280; text-align: left; padding: 0.65rem 1rem; border-bottom: 1px solid rgba(255,255,255,0.07); }
+td { font-size: 0.9rem; color: #CBD5E0; padding: 0.85rem 1rem; vertical-align: middle; border-bottom: 1px solid rgba(255,255,255,0.05); line-height: 1.5; }
+tr:last-child td { border-bottom: none; }
+td:first-child { color: #fff; font-weight: 500; }
+td.num { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: #1ABC9C; letter-spacing: 0.04em; white-space: nowrap; }
 
-/* Why Now list */
+/* Partner logos */
+.partner-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.25rem; margin-top: 1.75rem; align-items: stretch; }
+.partner-card { border: 1px solid rgba(255,255,255,0.07); border-radius: 0.75rem; padding: 1.5rem; background: rgba(255,255,255,0.02); display: flex; flex-direction: column; gap: 0.85rem; }
+.partner-card img { height: 52px; width: auto; object-fit: contain; object-position: left; }
+.partner-card p { font-size: 0.82rem; color: #9CA3AF; line-height: 1.6; flex: 1; }
+.partner-stat { font-family: 'Bebas Neue', sans-serif; font-size: 1.1rem; color: #1ABC9C; letter-spacing: 0.04em; }
+
+/* Proof bullets */
+.proof-list { list-style: none; padding: 0; margin: 1.25rem 0 0; display: flex; flex-direction: column; gap: 0.7rem; }
+.proof-list li { display: flex; gap: 0.85rem; align-items: flex-start; font-size: 0.9rem; color: #CBD5E0; }
+.proof-list li::before { content: ''; display: block; width: 6px; height: 6px; border-radius: 50%; background: #1ABC9C; margin-top: 0.62rem; flex-shrink: 0; }
+
+/* Blockquote */
+.bq { margin: 1.75rem 0 0; padding: 1.25rem 1.5rem; border-left: 3px solid #1ABC9C; background: rgba(26,188,156,0.04); border-radius: 0 0.5rem 0.5rem 0; }
+.bq p { font-size: 0.9rem; color: #CBD5E0; font-style: italic; line-height: 1.7; }
+.bq cite { display: block; margin-top: 0.5rem; font-size: 0.76rem; font-style: normal; font-weight: 600; color: #1ABC9C; letter-spacing: 0.04em; }
+
+/* Why now */
 .why-list { list-style: none; padding: 0; margin: 1.25rem 0 0; display: flex; flex-direction: column; gap: 0.85rem; }
 .why-list li { padding-left: 1rem; border-left: 2px solid rgba(26,188,156,0.3); font-size: 0.9rem; color: #CBD5E0; line-height: 1.65; }
 .why-list li strong { color: #fff; font-weight: 600; }
 
-/* Logo text */
-.logo-text { font-family: 'Bebas Neue', sans-serif; font-size: 2.2rem; letter-spacing: 0.12em; color: #1ABC9C; line-height: 1; }
-.logo-sub { font-family: 'Bebas Neue', sans-serif; font-size: 0.9rem; letter-spacing: 0.22em; color: #4B5563; }
+/* Team grid */
+.team-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.07); border-radius: 0.75rem; overflow: hidden; margin-top: 1.5rem; }
+.team-card { background: #000; padding: 1.25rem; display: flex; gap: 1rem; align-items: flex-start; }
+.team-avatar { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; object-position: top; border: 2px solid rgba(26,188,156,0.3); flex-shrink: 0; }
+.team-name { font-family: 'Inter', sans-serif; font-weight: 600; font-size: 0.9rem; color: #fff; line-height: 1.2; }
+.team-role { font-size: 0.72rem; color: #1ABC9C; font-weight: 600; letter-spacing: 0.04em; margin: 0.2rem 0 0.45rem; }
+.team-bio { font-size: 0.8rem; color: #9CA3AF; line-height: 1.6; }
 
-@media (max-width: 600px) {
+/* Jack */
+.jack-card { display: grid; grid-template-columns: 200px 1fr; gap: 2rem; align-items: start; margin-top: 1.5rem; border: 1px solid rgba(247,182,19,0.15); border-radius: 0.75rem; overflow: hidden; background: rgba(247,182,19,0.03); }
+.jack-card img { width: 100%; height: 280px; object-fit: cover; object-position: top; }
+.jack-info { padding: 1.5rem 1.5rem 1.5rem 0; }
+.jack-name { font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; color: #F7B613; letter-spacing: 0.05em; line-height: 0.95; }
+.jack-sub { font-size: 0.75rem; color: #9CA3AF; margin: 0.4rem 0 0.85rem; }
+
+/* Round stats */
+.round-stats { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1px; background: rgba(255,255,255,0.07); border-radius: 0.75rem; overflow: hidden; margin-bottom: 1.25rem; }
+.round-stat { background: #000; padding: 1.5rem 1.25rem; }
+.round-stat-label { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #6B7280; margin-bottom: 0.3rem; }
+.round-stat-val { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; letter-spacing: 0.04em; line-height: 1; }
+
+/* Contact cards */
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-top: 1.5rem; }
+.contact-card { border: 1px solid rgba(255,255,255,0.08); border-radius: 0.75rem; overflow: hidden; background: rgba(255,255,255,0.02); display: flex; gap: 1.25rem; padding: 1.5rem; align-items: flex-start; }
+.contact-avatar { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; object-position: top; border: 2px solid rgba(26,188,156,0.3); flex-shrink: 0; }
+.contact-name { font-family: 'Inter', sans-serif; font-weight: 600; font-size: 0.95rem; color: #fff; }
+.contact-role { font-size: 0.72rem; color: #1ABC9C; font-weight: 600; margin: 0.2rem 0 0.65rem; }
+.contact-line { font-size: 0.85rem; color: #9CA3AF; line-height: 1.8; }
+.contact-line a { color: #CBD5E0; }
+.contact-line a:hover { color: #1ABC9C; }
+
+.links-row { margin-top: 1.5rem; padding: 1.25rem 1.5rem; border: 1px solid rgba(26,188,156,0.12); border-radius: 0.75rem; background: rgba(26,188,156,0.03); display: flex; flex-direction: column; gap: 0.4rem; }
+.link-line { display: flex; align-items: baseline; gap: 0.75rem; font-size: 0.88rem; }
+.link-label { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #6B7280; min-width: 70px; flex-shrink: 0; }
+
+/* Legal */
+.legal { padding: 2.5rem 0; border-top: 1px solid rgba(255,255,255,0.06); }
+.legal p { font-size: 0.73rem; color: #4B5563; line-height: 1.7; }
+
+/* Cover */
+.cover { padding: 4rem 0 3rem; border-bottom: 1px solid rgba(255,255,255,0.08); }
+
+@media (max-width: 640px) {
+  .phone-row { grid-template-columns: 1fr 1fr; }
+  .phone-row img:last-child { display: none; }
+  .partner-row { grid-template-columns: 1fr; }
+  .team-grid { grid-template-columns: 1fr; }
+  .jack-card { grid-template-columns: 1fr; }
+  .jack-card img { height: 220px; }
+  .jack-info { padding: 1.25rem; }
   .round-stats { grid-template-columns: 1fr 1fr; }
+  .contact-grid { grid-template-columns: 1fr; }
   .cover { padding: 2.5rem 0 2rem; }
   .sec { padding: 2.5rem 0; }
 }
@@ -184,9 +158,9 @@ td.num { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: #1ABC9
 
   <!-- COVER -->
   <div class="cover">
-    <div class="logo-sub">SHOT CLUBHOUSE</div>
-    <h1 style="font-size:clamp(2.5rem,7vw,4.5rem);line-height:0.88;margin:0.5rem 0 1rem;color:#fff;">THE ONE TRUE<br><span style="color:#1ABC9C;">HOME FOR SPORT.</span></h1>
-    <div class="cover-pills">
+    <img src="https://shotclubhouse.com/shot-logo.png" alt="SHOT Clubhouse" style="height:52px;width:auto;margin-bottom:1.25rem;display:block;">
+    <h1 style="font-size:clamp(2.8rem,8vw,5rem);line-height:0.86;color:#fff;margin-bottom:0.25rem;">THE ONE TRUE<br><span style="color:#1ABC9C;">HOME FOR SPORT.</span></h1>
+    <div class="cover-pills" style="margin-top:1.25rem;">
       <span class="pill teal">SEIS &amp; EIS Advance Assurance</span>
       <span class="pill gold">£16M Pre-Money</span>
       <span class="pill teal">£725K Available</span>
@@ -197,12 +171,22 @@ td.num { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: #1ABC9
 
   <hr class="rule">
 
-  <!-- THE ONE TRUE HOME FOR SPORT -->
+  <!-- THE OPPORTUNITY -->
   <div class="sec">
     <div class="label">The Opportunity</div>
     <p class="body-text">Sport is the largest connected community on the planet. Five billion people. Every continent. Every age. And it has no infrastructure layer.</p>
     <p class="body-text">No portable identity for athletes. No safe space for young people online. No single platform connecting the club, the coach, the athlete, and the parent.</p>
     <p class="body-text" style="color:#fff;font-weight:500;margin-top:1.25rem;">SHOT is that platform. And it has never existed before.</p>
+    <div class="sport-strip">
+      <img src="https://pitchdeck.shotclubhouse.com/Football%20(1).png" alt="Football">
+      <img src="https://pitchdeck.shotclubhouse.com/Boxing%20(2).png" alt="Boxing">
+      <img src="https://pitchdeck.shotclubhouse.com/Rugby%20(1).png" alt="Rugby">
+      <img src="https://pitchdeck.shotclubhouse.com/Basketball%20(1).png" alt="Basketball">
+      <img src="https://pitchdeck.shotclubhouse.com/Cricket%20(3).png" alt="Cricket">
+      <img src="https://pitchdeck.shotclubhouse.com/Tennis%20(2).png" alt="Tennis">
+      <img src="https://pitchdeck.shotclubhouse.com/Golf%20(3).png" alt="Golf">
+      <img src="https://pitchdeck.shotclubhouse.com/American%20Football%20(3).png" alt="American Football">
+    </div>
   </div>
 
   <hr class="rule">
@@ -222,27 +206,32 @@ td.num { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: #1ABC9
   <div class="sec">
     <div class="label">What We've Built</div>
     <h2 class="sec-heading">THE PLATFORM.<br><span style="color:#a78bfa;">THE IDENTITY.<br>THE INFRASTRUCTURE.</span></h2>
-    <p class="body-text" style="margin-bottom:1.5rem;"><strong style="color:#fff;">Sport Head ID</strong> — a verified, portable identity for every athlete, coach, and club. Issued for life. Registered trademark. Patentable architecture. Children's Code compliant from day one.</p>
-    <p class="body-text" style="margin-bottom:1rem;"><strong style="color:#fff;">The Clubhouse</strong> — four rooms in one platform:</p>
-    <div style="border: 1px solid rgba(255,255,255,0.07); border-radius: 0.75rem; overflow: hidden; background: rgba(255,255,255,0.02);">
-      <div class="product-item" style="padding:1.25rem 1.5rem;">
+    <p class="body-text"><strong style="color:#fff;">Sport Head ID</strong> — a verified, portable identity for every athlete, coach, and club. Issued for life. Registered trademark. Patentable architecture. Children's Code compliant from day one.</p>
+    <div class="phone-row">
+      <img src="https://pitchdeck.shotclubhouse.com/Phone%20Mockup%20-%20Sport%20Head%20Creator%20Customise.png" alt="Sport Head ID Creator" loading="lazy">
+      <img src="https://pitchdeck.shotclubhouse.com/Phone%20Mockup%20-%20Home%20Screen%20Pitch.png" alt="SHOT Clubhouse Home Screen" loading="lazy">
+      <img src="https://pitchdeck.shotclubhouse.com/Phone%20Mockup%20-%20Perform%20Pre%20Post%20Confidence%20Evaluations.png" alt="PERFORM evaluations" loading="lazy">
+    </div>
+    <p class="body-text" style="margin-top:1.75rem;"><strong style="color:#fff;">The Clubhouse</strong> — four rooms in one platform:</p>
+    <div class="product-grid">
+      <div class="product-item">
         <div class="product-name">PERFORM</div>
         <div class="product-desc">Structured coaching frameworks across 10 sports, 37 programmes, 2,250+ development criteria, aligned to The FA, England Boxing, LTA, RFU, ECB, and England Hockey. 30 seconds to complete. 360 feedback between Coach, Athlete &amp; Parent.</div>
       </div>
-      <div class="product-item" style="padding:1.25rem 1.5rem;">
+      <div class="product-item">
         <div class="product-name">PULSE</div>
         <div class="product-desc">Sport-only content, safe for under-18s, with live scores and creator monetisation. No algorithmic toxicity.</div>
       </div>
-      <div class="product-item" style="padding:1.25rem 1.5rem;">
+      <div class="product-item">
         <div class="product-name">LOCKER</div>
         <div class="product-desc">Athlete commerce: kit, limited drops, culture.</div>
       </div>
-      <div class="product-item" style="padding:1.25rem 1.5rem;border:none;">
+      <div class="product-item">
         <div class="product-name">ALEX AI</div>
         <div class="product-desc">Your sport development and lifestyle assistant across the entire platform.</div>
       </div>
     </div>
-    <p class="body-text" style="margin-top:1.25rem;font-size:0.85rem;color:#6B7280;">Live on App Store and Google Play. Repeat users and revenue generating today.</p>
+    <p class="body-text" style="margin-top:1.1rem;font-size:0.82rem;color:#6B7280;">Live on App Store and Google Play. Repeat users and revenue generating today.</p>
   </div>
 
   <hr class="rule">
@@ -252,7 +241,7 @@ td.num { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: #1ABC9
     <div class="label">The Market</div>
     <h2 class="sec-heading">£500 BILLION.<br>NO INFRASTRUCTURE.</h2>
     <p class="body-text">The global sports participation economy is worth over £500 billion. It has no infrastructure layer. SHOT is building it.</p>
-    <div class="table-wrap" style="margin-top:1.5rem;">
+    <div class="table-wrap">
       <table>
         <thead>
           <tr>
@@ -281,7 +270,6 @@ td.num { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: #1ABC9
       </table>
     </div>
     <p class="body-text" style="margin-top:1.5rem;">Through our partnership with the United Nations, we are in a unique position to roll out SHOT Clubhouse and Sport Head ID as the digital infrastructure layer for sport. Not just football. Broader sport. Every discipline. Every level.</p>
-
     <div style="margin-top:2rem;">
       <div class="label" style="margin-bottom:0.75rem;">Why Now</div>
       <ul class="why-list">
@@ -308,6 +296,27 @@ td.num { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: #1ABC9
       <li>SEIS &amp; EIS Advance Assurance confirmed October 2025</li>
       <li>Sport Head ID in use at infrastructure layer with a West African Sport Governing Body</li>
     </ul>
+
+    <div class="partner-row" style="margin-top:2rem;">
+      <div class="partner-card">
+        <img src="https://www.un.org/sites/un2.un.org/files/fftg_web_banner-02_0.png" alt="UN Football for the Goals">
+        <div class="partner-stat">120 Countries · 450+ Organisations</div>
+        <p>UN Football for the Goals member. The global strategic distribution layer for Sport Head ID.</p>
+      </div>
+      <div class="partner-card">
+        <img src="https://sported.org.uk/wp-content/uploads/2025/09/header-logo.svg" alt="Sported Foundation">
+        <div class="partner-stat">5,000 Clubs · 500,000 Young People</div>
+        <p>Sported Foundation Power of Six — the UK's leading grassroots sport network.</p>
+      </div>
+      <div class="partner-card" style="padding:0;overflow:hidden;">
+        <img src="https://lirp.cdn-website.com/6cd4ff6a/dms3rep/multi/opt/NEW+AR+homepage+image+1-1920w.png" alt="Ferdinand Collective" style="width:100%;height:120px;object-fit:cover;object-position:top;display:block;border-radius:0;">
+        <div style="padding:1rem 1.25rem 1.25rem;">
+          <div class="partner-stat">Ferdinand Collective</div>
+          <p>Active client. Running PERFORM across their grassroots coaching programmes. Paying from August 2026.</p>
+        </div>
+      </div>
+    </div>
+
     <div class="bq">
       <p>"SHOT brings something unique and very interesting to FFTG members."</p>
       <cite>Carlos Islam, Communications Officer, UN Football for the Goals</cite>
@@ -319,41 +328,96 @@ td.num { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: #1ABC9
   <!-- THE TEAM -->
   <div class="sec">
     <div class="label">The Team</div>
-    <h2 class="sec-heading">BUILT BY PEOPLE WHO<br>KNOW HOW TO BUILD,<br><span style="color:#a78bfa;">SCALE AND DELIVER.</span></h2>
-    <ul class="team-list">
-      <li>
-        <span class="team-name">Liam McDowell</span><span style="color:#6B7280;"> — </span><span class="team-role">Founder &amp; CEO</span>
-        <span style="font-size:0.88rem;color:#9CA3AF;">Built and sold MagenTys to NTT DATA. 20 years enterprise technology. Grassroots football coach.</span>
-      </li>
-      <li>
-        <span class="team-name">Phil Gault</span><span style="color:#6B7280;"> — </span><span class="team-role">Co-Founder &amp; CCO</span>
-        <span style="font-size:0.88rem;color:#9CA3AF;">Former VP, GlobalLogic/Hitachi. Previous founder of a multifaceted sports consultancy.</span>
-      </li>
-      <li>
-        <span class="team-name">Jonny Wooldridge</span><span style="color:#6B7280;"> — </span><span class="team-role">CTO</span>
-        <span style="font-size:0.88rem;color:#9CA3AF;">Top 100 CIO UK. Technology Director Royal Mail. Ex-EE and M&amp;S. Digital ID visionary.</span>
-      </li>
-      <li>
-        <span class="team-name">Steven Gonsalvez</span><span style="color:#6B7280;"> — </span><span class="team-role">Engineering Director</span>
-        <span style="font-size:0.88rem;color:#9CA3AF;">Ex-BT and M&amp;S, platforms serving 30M+ users.</span>
-      </li>
-      <li>
-        <span class="team-name">Anthony Warner</span><span style="color:#6B7280;"> — </span><span class="team-role">CRO</span>
-        <span style="font-size:0.88rem;color:#9CA3AF;">Former Global CEO BGC Group. Co-founded Volante Sports, acquired by Wasserman.</span>
-      </li>
-    </ul>
-    <div style="margin-top:1.75rem;">
-      <div class="label" style="color:#F7B613;margin-bottom:0.75rem;">Key Ambassadors</div>
-      <ul class="team-list">
-        <li>
-          <span class="team-name">Jack Hinshelwood</span><span style="color:#6B7280;"> — </span>
-          <span style="font-size:0.88rem;color:#9CA3AF;">Brighton &amp; Hove Albion, Premier League · England Under-21 · Championship Euro Winner. Equity holder.</span>
-        </li>
-        <li style="border:none;padding-bottom:0;">
-          <span class="team-name" style="color:#6B7280;">+ Premier League legend joining.</span>
-          <span style="font-size:0.88rem;color:#4B5563;"> To be announced.</span>
-        </li>
-      </ul>
+    <h2 class="sec-heading">BUILT BY PEOPLE WHO KNOW<br>HOW TO BUILD, SCALE<br><span style="color:#a78bfa;">AND DELIVER.</span></h2>
+    <div class="team-grid">
+      <div class="team-card">
+        <img src="https://pitchdeck.shotclubhouse.com/Liam%20McDowell%20-%20Headshot%20SHOT%20Cap%20Teal.png" alt="Liam McDowell" class="team-avatar">
+        <div>
+          <div class="team-name">Liam McDowell</div>
+          <div class="team-role">Founder &amp; CEO</div>
+          <div class="team-bio">Built and sold MagenTys to NTT DATA. 20 years enterprise technology. Grassroots football coach.</div>
+        </div>
+      </div>
+      <div class="team-card">
+        <img src="https://pitchdeck.shotclubhouse.com/phil%20(1).png" alt="Phil Gault" class="team-avatar">
+        <div>
+          <div class="team-name">Philip Gault</div>
+          <div class="team-role">Co-Founder &amp; CCO</div>
+          <div class="team-bio">Former VP, GlobalLogic/Hitachi. Previous founder of a multifaceted sports consultancy.</div>
+        </div>
+      </div>
+      <div class="team-card">
+        <img src="https://live.staticflickr.com/65535/54830644846_809f1ea1f2_b.jpg" alt="Jonny Wooldridge" class="team-avatar">
+        <div>
+          <div class="team-name">Jonny Wooldridge</div>
+          <div class="team-role">Chief Technical Officer</div>
+          <div class="team-bio">Top 100 CIO UK. Technology Director Royal Mail. Ex-EE and M&amp;S. Digital ID visionary.</div>
+        </div>
+      </div>
+      <div class="team-card">
+        <img src="https://pitchdeck.shotclubhouse.com/1649328837840.jpg" alt="Steven Gonsalvez" class="team-avatar" style="object-position:top;">
+        <div>
+          <div class="team-name">Steven Gonsalvez</div>
+          <div class="team-role">Engineering Director</div>
+          <div class="team-bio">Ex-BT and M&amp;S, platforms serving 30M+ users.</div>
+        </div>
+      </div>
+      <div class="team-card">
+        <img src="https://live.staticflickr.com/65535/55039255225_cd774c5ca4_b.jpg" alt="Anthony Warner" class="team-avatar">
+        <div>
+          <div class="team-name">Anthony Warner</div>
+          <div class="team-role">Chief Revenue Officer</div>
+          <div class="team-bio">Former Global CEO BGC Group. Co-founded Volante Sports, acquired by Wasserman.</div>
+        </div>
+      </div>
+      <div class="team-card">
+        <img src="https://live.staticflickr.com/65535/54830902743_49de0c6bfd_b.jpg" alt="Jamie Barker" class="team-avatar">
+        <div>
+          <div class="team-name">Jamie Barker</div>
+          <div class="team-role">Director of Club Success</div>
+          <div class="team-bio">Co-founded CWS United CIC. Led Ferdinand Collective sessions. Leads all grassroots adoption.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AMBASSADORS -->
+    <div style="margin-top:2.5rem;">
+      <div class="label" style="color:#F7B613;">Key Ambassadors</div>
+      <div class="jack-card">
+        <img src="https://cws.ferdinandcollective.com/JH.jpeg" alt="Jack Hinshelwood">
+        <div class="jack-info">
+          <div class="jack-name">JACK HINSHELWOOD</div>
+          <div class="jack-sub">Brighton &amp; Hove Albion, Premier League · England Under-21 · Championship Euro Winner</div>
+          <p style="font-size:0.88rem;color:#CBD5E0;line-height:1.65;margin-bottom:1rem;">An active Premier League player with equity in SHOT. His career was shaped by the coaches and systems SHOT is now making accessible at grassroots level.</p>
+          <span style="font-size:0.8rem;color:#6B7280;font-style:italic;">+ Premier League legend joining. To be announced.</span>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.06);border-radius:0.75rem;overflow:hidden;margin-top:1px;">
+        <div class="team-card">
+          <img src="https://live.staticflickr.com/65535/54829800017_0de4657051_b.jpg" alt="Mark Beard" class="team-avatar" style="border-color:rgba(247,182,19,0.3);">
+          <div>
+            <div class="team-name">Mark Beard</div>
+            <div class="team-role" style="color:#F7B613;">Ambassador &amp; Shareholder</div>
+            <div class="team-bio">Professional boxer and community champion.</div>
+          </div>
+        </div>
+        <div class="team-card">
+          <img src="https://live.staticflickr.com/65535/54830977075_b5e9c4b103_b.jpg" alt="Varsha Bailey-Gunputh" class="team-avatar" style="border-color:rgba(247,182,19,0.3);">
+          <div>
+            <div class="team-name">Varsha Bailey-Gunputh</div>
+            <div class="team-role" style="color:#F7B613;">Ambassador &amp; Shareholder</div>
+            <div class="team-bio">Sports presenter and broadcaster.</div>
+          </div>
+        </div>
+        <div class="team-card">
+          <img src="https://live.staticflickr.com/65535/54830644836_1cfd217010_b.jpg" alt="Eilish Tierney" class="team-avatar" style="border-color:rgba(247,182,19,0.3);">
+          <div>
+            <div class="team-name">Eilish Tierney</div>
+            <div class="team-role" style="color:#F7B613;">Ambassador &amp; Shareholder</div>
+            <div class="team-bio">Fitness professional and content creator.</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -362,7 +426,7 @@ td.num { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: #1ABC9
   <!-- THE ROUND -->
   <div class="sec">
     <div class="label">The Round</div>
-    <h2 class="sec-heading">TAKE YOUR SHOT.<br><span style="color:#1ABC9C;">OWN IT.</span><br><span style="color:#F7B613;">MAKE IMPACT.</span></h2>
+    <h2 class="sec-heading" style="margin-bottom:1.5rem;">TAKE YOUR SHOT.<br><span style="color:#1ABC9C;">OWN IT.</span> <span style="color:#F7B613;">MAKE IMPACT.</span></h2>
     <div class="round-stats">
       <div class="round-stat">
         <div class="round-stat-label">Pre-Money</div>
@@ -374,7 +438,7 @@ td.num { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: #1ABC9
       </div>
       <div class="round-stat">
         <div class="round-stat-label">Closing</div>
-        <div class="round-stat-val" style="color:#1ABC9C;font-size:1.5rem;">30 Sep 2026</div>
+        <div class="round-stat-val" style="color:#1ABC9C;font-size:1.5rem;line-height:1.1;">30 Sep<br>2026</div>
       </div>
     </div>
     <div class="table-wrap">
@@ -397,7 +461,7 @@ td.num { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: #1ABC9
           </tr>
           <tr>
             <td>Pre-money valuation</td>
-            <td class="num">£16M</td>
+            <td class="num">£16,000,000</td>
             <td></td>
           </tr>
           <tr>
@@ -425,19 +489,37 @@ td.num { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: #1ABC9
   <!-- GET IN TOUCH -->
   <div class="sec">
     <div class="label">Get In Touch</div>
-    <h2 class="sec-heading" style="margin-bottom:1.5rem;">READY TO TALK?</h2>
-    <div class="cta-block">
-      <div class="cta-line"><span class="cta-label">Name</span> Liam McDowell, Founder &amp; CEO</div>
-      <div class="cta-line"><span class="cta-label">Email</span> <a href="mailto:liam@shotclubhouse.com">liam@shotclubhouse.com</a></div>
-      <div class="cta-line"><span class="cta-label">Web</span> <a href="https://shotclubhouse.com" target="_blank" rel="noopener">shotclubhouse.com</a></div>
-      <div class="cta-line"><span class="cta-label">Full Deck</span> <a href="https://pitchdeck.shotclubhouse.com" target="_blank" rel="noopener">pitchdeck.shotclubhouse.com</a></div>
+    <h2 class="sec-heading" style="margin-bottom:0.5rem;">READY TO TALK?</h2>
+    <p class="body-text" style="margin-bottom:0;">Reach either founder directly.</p>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <img src="https://pitchdeck.shotclubhouse.com/Liam%20McDowell%20-%20Headshot%20SHOT%20Cap%20Teal.png" alt="Liam McDowell" class="contact-avatar">
+        <div>
+          <div class="contact-name">Liam McDowell</div>
+          <div class="contact-role">Founder &amp; CEO</div>
+          <div class="contact-line"><a href="mailto:liam@shotclubhouse.com">liam@shotclubhouse.com</a></div>
+        </div>
+      </div>
+      <div class="contact-card">
+        <img src="https://pitchdeck.shotclubhouse.com/phil%20(1).png" alt="Philip Gault" class="contact-avatar">
+        <div>
+          <div class="contact-name">Philip Gault</div>
+          <div class="contact-role">Co-Founder</div>
+          <div class="contact-line"><a href="tel:+447738640037">07738 640037</a></div>
+          <div class="contact-line"><a href="mailto:phil@shotclubhouse.com">phil@shotclubhouse.com</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="links-row">
+      <div class="link-line"><span class="link-label">Website</span><a href="https://shotclubhouse.com" target="_blank" rel="noopener">shotclubhouse.com</a></div>
+      <div class="link-line"><span class="link-label">Full Deck</span><a href="https://pitchdeck.shotclubhouse.com" target="_blank" rel="noopener">pitchdeck.shotclubhouse.com</a></div>
     </div>
   </div>
 
   <!-- LEGAL -->
   <div class="legal">
     <p>SHOT Clubhouse Ltd | Registered in England and Wales | No. 16350767</p>
-    <p style="margin-top:0.5rem;">This document is private and confidential. It is intended solely for the recipient. This is not financial advice. Investment in early-stage companies carries risk. SEIS/EIS relief is subject to HMRC approval and individual circumstances. Please seek independent financial advice before investing.</p>
+    <p style="margin-top:0.4rem;">This document is private and confidential. It is intended solely for the recipient. This is not financial advice. Investment in early-stage companies carries risk. SEIS/EIS relief is subject to HMRC approval and individual circumstances. Please seek independent financial advice before investing.</p>
   </div>
 
 </div>
