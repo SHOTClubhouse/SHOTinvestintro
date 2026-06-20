@@ -57,12 +57,18 @@ a:hover { text-decoration: underline; }
 .phone-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 1.75rem; }
 .phone-row img { width: 100%; border-radius: 0.75rem; object-fit: contain; background: rgba(255,255,255,0.02); }
 
-/* Product blocks */
-.product-grid { border: 1px solid rgba(255,255,255,0.07); border-radius: 0.75rem; overflow: hidden; background: rgba(255,255,255,0.02); margin-top: 1.25rem; }
-.product-item { padding: 1.1rem 1.4rem; border-bottom: 1px solid rgba(255,255,255,0.05); }
-.product-item:last-child { border-bottom: none; }
-.product-name { font-family: 'Bebas Neue', sans-serif; font-size: 1.05rem; color: #a78bfa; letter-spacing: 0.08em; margin-bottom: 0.25rem; }
-.product-desc { font-size: 0.86rem; color: #9CA3AF; line-height: 1.65; }
+/* Sport Head ID row */
+.shid-row { display: grid; grid-template-columns: 1fr 180px; gap: 2rem; align-items: center; margin-top: 1.25rem; }
+
+/* Room cards */
+.room-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.5rem; }
+.room-card { border: 1px solid rgba(255,255,255,0.07); border-radius: 0.75rem; overflow: hidden; background: rgba(255,255,255,0.02); display: flex; flex-direction: column; }
+.room-screens { background: #0a0a0a; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.room-body { padding: 1rem 1.1rem 1.1rem; flex: 1; }
+.room-name { font-family: 'Bebas Neue', sans-serif; font-size: 1.1rem; color: #a78bfa; letter-spacing: 0.08em; margin-bottom: 0.25rem; }
+.room-desc { font-size: 0.83rem; color: #9CA3AF; line-height: 1.65; }
+
+@media (max-width: 640px) { .shid-row { grid-template-columns: 1fr; } .shid-row video { max-width: 160px; margin: 0 auto; } .room-grid { grid-template-columns: 1fr; } }
 
 /* Table */
 .table-wrap { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.07); border-radius: 0.75rem; overflow: hidden; margin-top: 1.5rem; }
@@ -200,38 +206,66 @@ td.num { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: #1ABC9
   <div class="sec">
     <div class="label">What We've Built</div>
     <h2 class="sec-heading">THE PLATFORM.<br><span style="color:#a78bfa;">THE IDENTITY.<br>THE INFRASTRUCTURE.</span></h2>
-    <p class="body-text"><strong style="color:#fff;">Sport Head&trade; ID</strong> is a verified, portable identity for every athlete, coach, and club. Issued for life. Patentable architecture. Children's Code compliant from day one. It is the identity layer sport has never had. This is the moat.</p>
-    <div style="margin-top:1.75rem;display:flex;justify-content:center;">
-      <video autoplay loop muted playsinline style="max-width:280px;width:100%;border-radius:0.75rem;display:block;">
+    <!-- Sport Head ID: text left, video right -->
+    <div class="shid-row">
+      <p class="body-text" style="margin:0;"><strong style="color:#fff;">Sport Head&trade; ID</strong> is a verified, portable identity for every athlete, coach, and club. Issued for life. Patentable architecture. Children's Code compliant from day one. It is the identity layer sport has never had. This is the moat.</p>
+      <video autoplay loop muted playsinline style="width:180px;border-radius:0.75rem;display:block;">
         <source src="https://res.cloudinary.com/shotclubhouse/video/upload/v1781937738/download_muf1sb.mp4" type="video/mp4">
       </video>
     </div>
-    <p class="body-text" style="margin-top:1.75rem;"><strong style="color:#fff;">The Clubhouse</strong> has four rooms in one platform:</p>
-    <div class="product-grid">
-      <div class="product-item">
-        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:0.75rem;">
-          <img src="https://res.cloudinary.com/shotclubhouse/image/upload/v1781937718/player_perform_vwr6mj.png" alt="Player PERFORM" style="width:100%;height:90px;object-fit:cover;border-radius:4px;display:block;">
-          <img src="https://res.cloudinary.com/shotclubhouse/image/upload/v1781937718/coach_perform_ebxtuo.png" alt="Coach PERFORM" style="width:100%;height:90px;object-fit:cover;border-radius:4px;display:block;">
-          <img src="https://res.cloudinary.com/shotclubhouse/image/upload/v1781937718/framework_aidap7.png" alt="Framework" style="width:100%;height:90px;object-fit:cover;border-radius:4px;display:block;">
-          <img src="https://res.cloudinary.com/shotclubhouse/image/upload/v1781937718/club_admin_iapmb1.png" alt="Club Admin" style="width:100%;height:90px;object-fit:cover;border-radius:4px;display:block;">
+
+    <!-- Four rooms -->
+    <p class="body-text" style="margin-top:2rem;"><strong style="color:#fff;">The Clubhouse</strong> has four rooms in one platform:</p>
+    <div class="room-grid">
+
+      <!-- PERFORM -->
+      <div class="room-card">
+        <div class="room-screens" style="display:grid;grid-template-columns:1fr 1fr;gap:2px;">
+          <img src="https://res.cloudinary.com/shotclubhouse/image/upload/v1781937718/player_perform_vwr6mj.png" alt="Player PERFORM" style="width:100%;height:160px;object-fit:cover;display:block;">
+          <img src="https://res.cloudinary.com/shotclubhouse/image/upload/v1781937718/coach_perform_ebxtuo.png" alt="Coach PERFORM" style="width:100%;height:160px;object-fit:cover;display:block;">
+          <img src="https://res.cloudinary.com/shotclubhouse/image/upload/v1781937718/framework_aidap7.png" alt="Framework" style="width:100%;height:160px;object-fit:cover;display:block;">
+          <img src="https://res.cloudinary.com/shotclubhouse/image/upload/v1781937718/club_admin_iapmb1.png" alt="Club Admin" style="width:100%;height:160px;object-fit:cover;display:block;">
         </div>
-        <div class="product-name">PERFORM</div>
-        <div class="product-desc">Proprietary coaching frameworks across 10 sports, 37 programmes, and 2,250+ development criteria. Aligned to The FA, England Boxing, LTA, RFU, ECB, and England Hockey. 360 feedback between coach, athlete, and parent. 30 seconds to complete. This is why users subscribe.</div>
+        <div class="room-body">
+          <div class="room-name">PERFORM</div>
+          <div class="room-desc">Proprietary coaching frameworks across 10 sports, 37 programmes, and 2,250+ development criteria. Aligned to The FA, England Boxing, LTA, RFU, ECB, and England Hockey. 360 feedback between coach, athlete, and parent. This is why users subscribe.</div>
+        </div>
       </div>
-      <div class="product-item">
-        <img src="https://res.cloudinary.com/shotclubhouse/image/upload/v1781937718/pulse_gk5vbb.png" alt="PULSE" style="height:90px;width:auto;display:block;border-radius:4px;margin-bottom:0.75rem;object-fit:contain;">
-        <div class="product-name">PULSE</div>
-        <div class="product-desc">A proprietary newsroom approach and technology that delivers safeguarded sport-only content, safe for under-18s. Live scores, creator monetisation, and no algorithmic toxicity. This is why users open the app every day.</div>
+
+      <!-- PULSE -->
+      <div class="room-card">
+        <div class="room-screens" style="height:322px;">
+          <img src="https://res.cloudinary.com/shotclubhouse/image/upload/v1781937718/pulse_gk5vbb.png" alt="PULSE" style="height:100%;width:auto;max-width:100%;object-fit:contain;display:block;">
+        </div>
+        <div class="room-body">
+          <div class="room-name">PULSE</div>
+          <div class="room-desc">A proprietary newsroom approach and technology that delivers safeguarded sport-only content, safe for under-18s. Live scores, creator monetisation, no algorithmic toxicity. This is why users open the app every day.</div>
+        </div>
       </div>
-      <div class="product-item">
-        <img src="https://res.cloudinary.com/shotclubhouse/image/upload/v1781937718/locker_vs5az3.png" alt="LOCKER" style="height:90px;width:auto;display:block;border-radius:4px;margin-bottom:0.75rem;object-fit:contain;">
-        <div class="product-name">LOCKER</div>
-        <div class="product-desc">Sport culture commerce experience. Kit, merchandise, limited drops, and more. This is why users spend.</div>
+
+      <!-- LOCKER -->
+      <div class="room-card">
+        <div class="room-screens" style="height:322px;">
+          <img src="https://res.cloudinary.com/shotclubhouse/image/upload/v1781937718/locker_vs5az3.png" alt="LOCKER" style="height:100%;width:auto;max-width:100%;object-fit:contain;display:block;">
+        </div>
+        <div class="room-body">
+          <div class="room-name">LOCKER</div>
+          <div class="room-desc">Sport culture commerce experience. Kit, merchandise, limited drops, and more. This is why users spend.</div>
+        </div>
       </div>
-      <div class="product-item">
-        <div class="product-name">ALEX AI</div>
-        <div class="product-desc">A personalised sport development and lifestyle assistant across the entire platform. Alex knows the athlete, the sport, and the progress. This is how we personalise at scale.</div>
+
+      <!-- ALEX AI -->
+      <div class="room-card">
+        <div class="room-screens" style="height:322px;flex-direction:column;gap:0.5rem;padding:1.5rem;text-align:center;">
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:3rem;color:rgba(107,0,219,0.15);letter-spacing:0.05em;line-height:1;">ALEX</div>
+          <div style="font-size:0.78rem;color:#4B5563;letter-spacing:0.12em;text-transform:uppercase;">Personalisation engine</div>
+        </div>
+        <div class="room-body">
+          <div class="room-name">ALEX AI</div>
+          <div class="room-desc">A personalised sport development and lifestyle assistant across the entire platform. Alex knows the athlete, the sport, and the progress. This is how we personalise at scale.</div>
+        </div>
       </div>
+
     </div>
     <div style="display:flex;flex-wrap:wrap;gap:0.75rem;align-items:center;margin-top:1.75rem;">
       <span style="font-size:0.72rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#6B7280;margin-right:0.25rem;">Available now</span>
