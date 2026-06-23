@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SHOT Clubhouse: Investment Introduction</title>
-<meta name="description" content="SHOT Clubhouse is building the verified identity and digital home for every athlete, coach and club on the planet. SEIS & EIS Advance Assurance. £16M pre-money.">
+<meta name="description" content="SHOT Clubhouse is the verified identity and digital home for every athlete, coach, club and fan on the planet. SEIS & EIS Advance Assurance. £16M pre-money.">
 <link rel="icon" type="image/png" href="https://shotclubhouse.com/shot-logo.png">
 <link rel="apple-touch-icon" href="https://shotclubhouse.com/shot-logo.png">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -49,26 +49,25 @@ a:hover { text-decoration: underline; }
 /* Section heading */
 .sec-heading { font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 0.93; margin-bottom: 1.5rem; }
 
-/* Sport Head icon strip */
-.sport-strip { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; margin-top: 1.75rem; }
-.sport-strip img { height: 64px; width: auto; opacity: 0.85; filter: drop-shadow(0 0 8px rgba(26,188,156,0.2)); }
-
-/* Phone mockups */
-.phone-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 1.75rem; }
-.phone-row img { width: 100%; border-radius: 0.75rem; object-fit: contain; background: rgba(255,255,255,0.02); }
-
 /* Sport Head ID row */
 .shid-row { display: grid; grid-template-columns: 1fr 180px; gap: 2rem; align-items: center; margin-top: 1.25rem; }
 
 /* Room cards */
-.room-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.5rem; }
+.room-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
 .room-card { border: 1px solid rgba(255,255,255,0.07); border-radius: 0.75rem; overflow: hidden; background: rgba(255,255,255,0.02); display: flex; flex-direction: column; }
 .room-screens { background: #0a0a0a; display: flex; align-items: center; justify-content: center; overflow: hidden; }
 .room-body { padding: 1rem 1.1rem 1.1rem; flex: 1; }
 .room-name { font-family: 'Bebas Neue', sans-serif; font-size: 1.1rem; color: #a78bfa; letter-spacing: 0.08em; margin-bottom: 0.25rem; }
 .room-desc { font-size: 0.83rem; color: #9CA3AF; line-height: 1.65; }
 
-@media (max-width: 640px) { .shid-row { grid-template-columns: 1fr; } .shid-row video { max-width: 160px; margin: 0 auto; } .room-grid { grid-template-columns: 1fr; } }
+/* Market boxes */
+.market-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 1rem; margin-top: 1.25rem; }
+.market-box { border-radius: 0.75rem; padding: 1.25rem; border: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.02); }
+.market-tier { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #6B7280; margin-bottom: 0.3rem; }
+.market-val { font-family: 'Bebas Neue', sans-serif; font-size: 1.9rem; letter-spacing: 0.04em; line-height: 1; }
+.market-desc { font-size: 0.8rem; color: #9CA3AF; line-height: 1.55; margin-top: 0.45rem; }
+
+@media (max-width: 640px) { .shid-row { grid-template-columns: 1fr; } .shid-row video { max-width: 160px; margin: 0 auto; } }
 
 /* Table */
 .table-wrap { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.07); border-radius: 0.75rem; overflow: hidden; margin-top: 1.5rem; }
@@ -88,11 +87,6 @@ td.num { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: #1ABC9
 .partner-body { padding: 1.1rem 1.25rem 1.25rem; display: flex; flex-direction: column; gap: 0.5rem; flex: 1; }
 .partner-card p { font-size: 0.82rem; color: #9CA3AF; line-height: 1.6; }
 .partner-stat { font-family: 'Bebas Neue', sans-serif; font-size: 1rem; color: #1ABC9C; letter-spacing: 0.04em; line-height: 1.2; }
-
-/* Proof bullets */
-.proof-list { list-style: none; padding: 0; margin: 1.25rem 0 0; display: flex; flex-direction: column; gap: 0.7rem; }
-.proof-list li { display: flex; gap: 0.85rem; align-items: flex-start; font-size: 0.9rem; color: #CBD5E0; }
-.proof-list li::before { content: ''; display: block; width: 6px; height: 6px; border-radius: 50%; background: #1ABC9C; margin-top: 0.62rem; flex-shrink: 0; }
 
 /* Blockquote */
 .bq { margin: 1.75rem 0 0; padding: 1.25rem 1.5rem; border-left: 3px solid #1ABC9C; background: rgba(26,188,156,0.04); border-radius: 0 0.5rem 0.5rem 0; }
@@ -146,10 +140,9 @@ td.num { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: #1ABC9
 
 /* Cover */
 .cover { padding: 4rem 0 3rem; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.cover-wordmark { font-size: clamp(2.8rem, 8vw, 5rem); line-height: 0.86; color: #fff; margin-bottom: 0.75rem; }
 
 @media (max-width: 640px) {
-  .phone-row { grid-template-columns: 1fr 1fr; }
-  .phone-row img:last-child { display: none; }
   .partner-row { grid-template-columns: 1fr; gap: 1rem; }
   .team-grid { grid-template-columns: 1fr; }
   .jack-card { grid-template-columns: 1fr; }
@@ -168,25 +161,27 @@ td.num { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: #1ABC9
 
   <!-- COVER -->
   <div class="cover">
-    <img src="https://shotclubhouse.com/shot-logo.png" alt="SHOT Clubhouse" style="height:52px;width:auto;margin-bottom:1.25rem;display:block;">
-    <h1 style="font-size:clamp(2.8rem,8vw,5rem);line-height:0.86;color:#fff;margin-bottom:0.25rem;">THE ONE TRUE<br><span style="color:#1ABC9C;">HOME FOR SPORT.</span></h1>
-    <div class="cover-pills" style="margin-top:1.25rem;">
-      <span class="pill teal">SEIS &amp; EIS Advance Assurance</span>
+    <img src="https://shotclubhouse.com/shot-logo.png" alt="SHOT Clubhouse" style="height:48px;width:auto;margin-bottom:1.25rem;display:block;">
+    <h1 class="cover-wordmark">SHOT <span style="color:#1ABC9C;">CLUBHOUSE</span></h1>
+    <p class="body-text" style="color:#fff;font-weight:500;max-width:600px;font-size:1.05rem;">The verified identity and digital home for every athlete, coach, club and fan on the planet. Live now.</p>
+    <div class="cover-pills">
+      <span class="pill teal">SEIS &amp; EIS</span>
       <span class="pill gold">£16M Pre-Money</span>
-      <span class="pill teal">£725K Available</span>
+      <span class="pill teal">£800K Raise</span>
       <span class="pill">Closing 30 September 2026</span>
       <span class="pill">Private &amp; Confidential · June 2026</span>
+      <span class="pill">Live on Google Play &amp; App Store</span>
     </div>
   </div>
 
   <hr class="rule">
 
-  <!-- THE OPPORTUNITY -->
+  <!-- THE ONE TRUE HOME FOR SPORT -->
   <div class="sec">
     <div class="label">The Opportunity</div>
-    <p class="body-text">Sport is the largest connected community on the planet. Five billion people. Every continent. Every age. And it has no infrastructure layer.</p>
-    <p class="body-text">No portable identity for athletes. No safe space for young people online. No single platform connecting the club, the coach, the athlete, and the parent.</p>
-    <p class="body-text" style="color:#fff;font-weight:500;margin-top:1.25rem;">SHOT is that platform. And it has never existed before.</p>
+    <h2 class="sec-heading">THE ONE TRUE<br><span style="color:#1ABC9C;">HOME FOR SPORT.</span></h2>
+    <p class="body-text">Sport is the largest community on the planet. Five billion people. Every continent. Every age. And it has no infrastructure layer. No portable identity. No safe space online. No single platform connecting clubs, coaches, athletes, parents and fans.</p>
+    <p class="body-text" style="color:#fff;font-weight:500;margin-top:1.25rem;">SHOT is the global ecosystem.</p>
   </div>
 
   <hr class="rule">
@@ -194,197 +189,116 @@ td.num { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: #1ABC9
   <!-- THE PROBLEM -->
   <div class="sec">
     <div class="label">The Problem</div>
-    <h2 class="sec-heading">A SPORT COMMUNITY<br>WITH NO INFRASTRUCTURE.</h2>
-    <p class="body-text">Athletes change clubs, change sports, change counties. No record survives. No verified identity travels with them. By the time they are twenty, there is no proof they ever played.</p>
-    <p class="body-text">Coaches run development on WhatsApp, paper, and memory. Elite athletes get academy systems. Everyone else gets a notebook at best.</p>
-    <p class="body-text">Young athletes access sport culture on Instagram and TikTok, platforms built for advertising. The UK Children's Code is already in force, and access is tightening.</p>
+    <h2 class="sec-heading">NO RECORD. NO TOOLS.<br><span style="color:#F7B613;">NO SAFE SPACE.</span></h2>
+    <p class="body-text">Athletes compete in different clubs, across multiple sports, in different regions. There is no single data source.</p>
+    <p class="body-text">Coach and athlete development is poor, with no single, easy to use, fit for purpose digital tool.</p>
+    <p class="body-text">Young athletes access sport culture on Instagram and TikTok, exposing them to harmful content. The UK Children's Code is already in force, and access is tightening.</p>
   </div>
 
   <hr class="rule">
 
-  <!-- WHAT WE'VE BUILT -->
+  <!-- SPORT HEAD ID -->
   <div class="sec">
-    <div class="label">What We've Built</div>
-    <h2 class="sec-heading">THE PLATFORM.<br><span style="color:#a78bfa;">THE IDENTITY.<br>THE INFRASTRUCTURE.</span></h2>
-    <!-- Sport Head ID: text left, video right -->
+    <div class="label">Sport Head ID</div>
+    <h2 class="sec-heading">SPORT HEAD&trade; ID</h2>
     <div class="shid-row">
       <div>
-        <p class="body-text" style="margin:0;"><strong style="color:#fff;">Sport Head&trade; ID</strong> is a verified, portable identity for every athlete, coach, and club. Issued for life. Patentable architecture. Children's Code compliant from day one. It is the identity layer sport has never had. This is the moat.</p>
+        <p class="body-text" style="margin:0;">Verified, portable identity for every athlete, coach, guardian and fan. Issued for life. Patentable. Children's Code compliant from day one.</p>
+        <p class="body-text">ID opens the SHOT Clubhouse, and plugs directly into other sport networks: federations, clubs, events and partners. The login layer for world sport.</p>
         <div style="margin-top:0.85rem;font-size:0.85rem;"><a href="https://sporthead.com" target="_blank" rel="noopener">sporthead.com</a> <span style="color:#4B5563;">·</span> <a href="https://sporthead.id" target="_blank" rel="noopener">sporthead.id</a></div>
       </div>
       <video autoplay loop muted playsinline style="width:180px;border-radius:0.75rem;display:block;">
         <source src="https://res.cloudinary.com/shotclubhouse/video/upload/v1781937738/download_muf1sb.mp4" type="video/mp4">
       </video>
     </div>
+  </div>
 
-    <!-- The Clubhouse -->
-    <p class="body-text" style="margin-top:2rem;"><strong style="color:#fff;">The SHOT Clubhouse</strong> unites everyone in sport through one membership. Whether you play or you follow, it is built for you. Safe, social, and yours for life.</p>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-top:1.5rem;">
+  <hr class="rule">
 
-      <!-- PERFORM -->
+  <!-- SHOT CLUBHOUSE -->
+  <div class="sec">
+    <div class="label">SHOT Clubhouse</div>
+    <h2 class="sec-heading">ONE MEMBERSHIP.<br><span style="color:#a78bfa;">EVERYONE IN SPORT.</span></h2>
+    <p class="body-text">The digital home Sport Head ID opens. One membership that unites everyone in sport. Safe, social, live now.</p>
+
+    <div class="room-grid">
       <div class="room-card">
-        <div class="room-screens" style="display:grid;grid-template-columns:1fr 1fr;gap:2px;">
-          <img src="https://res.cloudinary.com/shotclubhouse/image/upload/v1781937718/player_perform_vwr6mj.png" alt="Player PERFORM" style="width:100%;height:160px;object-fit:contain;background:#0a0a0a;display:block;">
-          <img src="https://res.cloudinary.com/shotclubhouse/image/upload/v1781937718/coach_perform_ebxtuo.png" alt="Coach PERFORM" style="width:100%;height:160px;object-fit:contain;background:#0a0a0a;display:block;">
-          <img src="https://res.cloudinary.com/shotclubhouse/image/upload/v1781937718/framework_aidap7.png" alt="Framework" style="width:100%;height:160px;object-fit:contain;background:#0a0a0a;display:block;">
-          <img src="https://res.cloudinary.com/shotclubhouse/image/upload/v1781937718/club_admin_iapmb1.png" alt="Club Admin" style="width:100%;height:160px;object-fit:contain;background:#0a0a0a;display:block;">
-        </div>
-        <div class="room-body">
-          <div class="room-name">PERFORM</div>
-          <div class="room-desc">For those who play. Coaching frameworks across 10 sports and 37 programmes, aligned to The FA, LTA, RFU, ECB, England Boxing and England Hockey. 360 feedback between coach, athlete and parent. Why they subscribe.</div>
-        </div>
+        <div class="room-screens" style="height:300px;"><img src="https://res.cloudinary.com/shotclubhouse/image/upload/v1781937718/player_perform_vwr6mj.png" alt="PERFORM" style="height:100%;width:auto;max-width:100%;object-fit:contain;display:block;"></div>
+        <div class="room-body"><div class="room-name">PERFORM</div><div class="room-desc">Structured, multi-sport coaching and development.</div></div>
       </div>
-
-      <!-- PULSE -->
       <div class="room-card">
-        <div class="room-screens" style="height:322px;">
-          <img src="https://res.cloudinary.com/shotclubhouse/image/upload/v1781937718/pulse_gk5vbb.png" alt="PULSE" style="height:100%;width:auto;max-width:100%;object-fit:contain;display:block;">
-        </div>
-        <div class="room-body">
-          <div class="room-name">PULSE</div>
-          <div class="room-desc">For those who follow. Safeguarded sport content, safe for under-18s. Live scores, creator monetisation, no algorithmic toxicity. Why they open the app every day.</div>
-        </div>
+        <div class="room-screens" style="height:300px;"><img src="https://res.cloudinary.com/shotclubhouse/image/upload/v1781937718/pulse_gk5vbb.png" alt="PULSE" style="height:100%;width:auto;max-width:100%;object-fit:contain;display:block;"></div>
+        <div class="room-body"><div class="room-name">PULSE</div><div class="room-desc">Safeguarded, tailored sport content.</div></div>
       </div>
-
-      <!-- LOCKER -->
       <div class="room-card">
-        <div class="room-screens" style="height:322px;">
-          <img src="https://res.cloudinary.com/shotclubhouse/image/upload/v1781937718/locker_vs5az3.png" alt="LOCKER" style="height:100%;width:auto;max-width:100%;object-fit:contain;display:block;">
-        </div>
-        <div class="room-body">
-          <div class="room-name">LOCKER</div>
-          <div class="room-desc">Sport culture and commerce. Kit, merchandise and limited drops. Why they spend.</div>
-        </div>
+        <div class="room-screens" style="height:300px;"><img src="https://res.cloudinary.com/shotclubhouse/image/upload/v1781937718/locker_vs5az3.png" alt="LOCKER" style="height:100%;width:auto;max-width:100%;object-fit:contain;display:block;"></div>
+        <div class="room-body"><div class="room-name">LOCKER</div><div class="room-desc">Sport culture commerce. Merchandise, kit and limited drops.</div></div>
       </div>
-
     </div>
 
-    <!-- ALEX AI: the supporting layer -->
     <div style="display:flex;gap:1.1rem;align-items:center;border:1px solid rgba(167,139,250,0.25);border-radius:0.75rem;background:rgba(167,139,250,0.05);padding:1rem 1.25rem;margin-top:1rem;">
       <img src="https://res.cloudinary.com/shotclubhouse/image/upload/v1781938692/alex_rrkv6v.png" alt="ALEX AI" style="height:96px;width:auto;border-radius:0.5rem;flex-shrink:0;object-fit:contain;background:#0a0a0a;">
       <div>
-        <div style="font-family:'Bebas Neue',sans-serif;font-size:1.2rem;color:#a78bfa;letter-spacing:0.06em;margin-bottom:0.2rem;">SUPPORTED THROUGHOUT BY ALEX AI</div>
-        <div style="font-size:0.85rem;color:#9CA3AF;line-height:1.6;">A personalised assistant that knows the athlete, the sport and the progress. This is how we personalise at scale.</div>
+        <div style="font-family:'Bebas Neue',sans-serif;font-size:1.2rem;color:#a78bfa;letter-spacing:0.06em;margin-bottom:0.2rem;">ALEX AI</div>
+        <div style="font-size:0.85rem;color:#9CA3AF;line-height:1.6;">Your personal assistant, helper, motivator and support across every area of the Clubhouse.</div>
       </div>
     </div>
+
     <div style="display:flex;flex-wrap:wrap;gap:0.75rem;align-items:center;margin-top:1.75rem;">
       <span style="font-size:0.72rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#6B7280;margin-right:0.25rem;">Available now</span>
-      <a href="https://apps.apple.com/gb/app/shot-clubhouse/id6757206956" target="_blank" rel="noopener">
-        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" style="height:40px;width:auto;display:block;">
-      </a>
-      <a href="https://play.google.com/store/apps/details?id=com.shotclubhouse.app" target="_blank" rel="noopener">
-        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" style="height:60px;width:auto;display:block;margin:-10px 0;">
-      </a>
-    </div>
-  </div>
-
-  <hr class="rule">
-
-  <!-- THE MARKET -->
-  <div class="sec">
-    <div class="label">The Market</div>
-    <h2 class="sec-heading">ONE SPORT HEAD ID.<br><span style="color:#1ABC9C;">EVERY SPORT HEAD ON THE PLANET.</span></h2>
-
-    <p class="body-text">Football for the Goals has six member confederations, governing every national football association on earth. Together they reach 265 million affiliated football participants across 211 countries. That is SHOT's structural distribution channel, before a single traditional marketing pound is spent.</p>
-
-    <p class="body-text" style="margin-top:1rem;">Beyond football, the club-affiliated sport universe spans a further 227 million people across rugby, basketball, cricket, tennis, padel, boxing, athletics and hockey. In total, 492 million people are registered to a sport club or governing body globally.</p>
-
-    <p class="body-text" style="margin-top:1rem;">Behind the participants sits the fan community. Football alone accounts for an estimated 3.5 billion fans. Across all sport, total fandom approaches 5 billion people. Our mission is to give every one of them a Sport Head ID, whether they play, coach, parent, or support.</p>
-
-    <div style="border-left:3px solid #1ABC9C;padding:1rem 1.25rem;margin:2rem 0;background:rgba(26,188,156,0.04);border-radius:0 0.5rem 0.5rem 0;">
-      <div style="font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:#fff;letter-spacing:0.05em;margin-bottom:0.4rem;">The mission</div>
-      <p style="color:#CBD5E0;font-size:0.95rem;line-height:1.7;margin:0;">One Sport Head ID for every sport head on the planet. Not just participants. Every fan, every parent, every coach, every club, every athlete. The identity layer sport does not yet have.</p>
+      <a href="https://apps.apple.com/gb/app/shot-clubhouse/id6757206956" target="_blank" rel="noopener"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" style="height:40px;width:auto;display:block;"></a>
+      <a href="https://play.google.com/store/apps/details?id=com.shotclubhouse.app" target="_blank" rel="noopener"><img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" style="height:60px;width:auto;display:block;margin:-10px 0;"></a>
     </div>
 
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th>Population</th>
-            <th>Size</th>
-            <th>Description</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Total sport fans</td>
-            <td class="num">~5B</td>
-            <td>Global sport fandom. Football alone: est. 3.5 billion fans.</td>
-          </tr>
-          <tr>
-            <td>Active participants</td>
-            <td class="num">1.5B</td>
-            <td>People actively playing sport worldwide. WHO and IOC estimates.</td>
-          </tr>
-          <tr>
-            <td>Affiliated across 11 sports</td>
-            <td class="num">492M</td>
-            <td>Registered to a club or governing body. 265M in football alone. 227M across all other sports.</td>
-          </tr>
-          <tr>
-            <td>10% convert to paid</td>
-            <td class="num">70M</td>
-            <td>Over £2 billion in annual recurring revenue.</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div style="margin-top:2rem;">
-      <div class="label" style="margin-bottom:0.75rem;">Why Now</div>
-      <ul class="why-list">
-        <li><strong>Regulatory pressure.</strong> The UK Children's Code is in force. TikTok and Instagram are not safe. Parents, regulators, and athletes are looking for an alternative built for sport.</li>
-        <li><strong>The identity gap.</strong> Over 100,000 registered sports clubs in the UK alone. None have a portable, verified identity layer for their athletes.</li>
-        <li><strong>United Nations access.</strong> Our UN membership gives us unique access to all six football confederations and 450 member organisations, including the six confederations, the FA, NWSL, and others across 120 countries.</li>
-      </ul>
-    </div>
-  </div>
-
-  <hr class="rule">
-
-  <!-- THE PROOF -->
-  <div class="sec">
-    <div class="label">The Proof</div>
-    <h2 class="sec-heading">NOT AN IDEA.<br><span style="color:#1ABC9C;">ALREADY OPERATING.</span></h2>
-    <ul class="proof-list">
-      <li>80,000+ Sport Head IDs &amp; Clubhouse memberships deploying</li>
-      <li>United Nations Football for the Goals member. 120 countries, 450+ sport organisations. Global strategic opportunity</li>
-      <li>Sported Foundation Power of Six. 5,000 UK clubs, 500,000 young people</li>
-      <li>47 grant applications already received from federations and clubs across 6 continents</li>
-      <li>Active paying clients. Competitors switching from ClassforKids and Player 360 to SHOT</li>
-      <li>900+ creator applications for PULSE</li>
-      <li>SEIS &amp; EIS Advance Assurance confirmed October 2025</li>
-      <li>Sport Head ID in use at infrastructure layer with a West African Sport Governing Body</li>
-    </ul>
-
-    <div class="partner-row" style="margin-top:2rem;">
-      <div class="partner-card">
-        <div class="partner-img-box">
-          <img src="https://www.un.org/sites/un2.un.org/files/fftg_web_banner-02_0.png" alt="UN Football for the Goals">
+    <!-- TAM SAM SOM -->
+    <div style="margin-top:2.5rem;">
+      <div class="label" style="margin-bottom:0.5rem;">The Market</div>
+      <div class="market-grid">
+        <div class="market-box" style="border-color:rgba(247,182,19,0.25);background:rgba(247,182,19,0.05);">
+          <div class="market-tier">TAM · Total Market</div>
+          <div class="market-val" style="color:#F7B613;">£500B+</div>
+          <div class="market-desc">Global sports participation economy. ~5 billion fans, 492M affiliated participants.</div>
         </div>
-        <div class="partner-body">
-          <div class="partner-stat">120 Countries · 450+ Organisations</div>
-          <p>UN Football for the Goals member. The global strategic distribution layer for Sport Head ID.</p>
+        <div class="market-box" style="border-color:rgba(26,188,156,0.25);background:rgba(26,188,156,0.05);">
+          <div class="market-tier">SAM · Serviceable Market</div>
+          <div class="market-val" style="color:#1ABC9C;">£25B+</div>
+          <div class="market-desc">English-speaking markets, grassroots to elite, across all sports.</div>
+        </div>
+        <div class="market-box" style="border-color:rgba(167,139,250,0.25);background:rgba(167,139,250,0.05);">
+          <div class="market-tier">SOM · Target</div>
+          <div class="market-val" style="color:#a78bfa;">£2.5B</div>
+          <div class="market-desc">Achievable five-year target. 70M paid users at scale drives £2 billion+ recurring revenue.</div>
         </div>
       </div>
+    </div>
+  </div>
+
+  <hr class="rule">
+
+  <!-- WHY NOW -->
+  <div class="sec">
+    <div class="label">Why Now</div>
+    <h2 class="sec-heading">THE WINDOW IS<br><span style="color:#F7B613;">OPEN NOW.</span></h2>
+    <ul class="why-list">
+      <li><strong>Regulatory pressure.</strong> The UK Children's Code is in force and access on mainstream platforms is tightening. Sport needs an alternative built for it.</li>
+      <li><strong>The identity gap is real.</strong> Over 100,000 registered sports clubs in the UK alone. None have a portable, verified identity layer.</li>
+      <li><strong>Athletes and coaches need development.</strong> There is no single, fit for purpose digital tool for the feedback loop that builds players.</li>
+      <li><strong>Content platforms are unsafe.</strong> Instagram and TikTok expose young athletes to harmful content. SHOT is sport-only and safeguarded by design.</li>
+    </ul>
+    <div class="partner-row">
       <div class="partner-card">
-        <div class="partner-img-box">
-          <img src="https://sported.org.uk/wp-content/uploads/2025/09/header-logo.svg" alt="Sported Foundation">
-        </div>
-        <div class="partner-body">
-          <div class="partner-stat">5,000 Clubs · 500,000 Young People</div>
-          <p>Sported Foundation Power of Six, the UK's leading grassroots sport network.</p>
-        </div>
+        <div class="partner-img-box"><img src="https://www.un.org/sites/un2.un.org/files/fftg_web_banner-02_0.png" alt="UN Football for the Goals"></div>
+        <div class="partner-body"><div class="partner-stat">UN Football for the Goals</div><p>Member. The global, strategic distribution layer.</p></div>
+      </div>
+      <div class="partner-card">
+        <div class="partner-img-box"><img src="https://sported.org.uk/wp-content/uploads/2025/09/header-logo.svg" alt="Sported Foundation"></div>
+        <div class="partner-body"><div class="partner-stat">Sported Foundation</div><p>Power of Six. The UK's leading grassroots sport network. 5,000 clubs, 500,000 young people.</p></div>
       </div>
       <div class="partner-card">
         <div class="partner-img-box" style="background-image:url('https://lirp.cdn-website.com/6cd4ff6a/dms3rep/multi/opt/NEW+AR+homepage+image+1-1920w.png');background-size:cover;background-position:top center;"></div>
-        <div class="partner-body">
-          <div class="partner-stat">Ferdinand Collective</div>
-          <p>Active client. Running PERFORM across their grassroots coaching programmes.</p>
-        </div>
+        <div class="partner-body"><div class="partner-stat">Ferdinand Collective</div><p>Active client, running PERFORM across their grassroots coaching.</p></div>
       </div>
     </div>
-
     <div class="bq">
       <p>"SHOT brings something unique and very interesting to FFTG members."</p>
       <cite>Carlos Islam, Communications Officer, UN Football for the Goals</cite>
@@ -456,32 +370,7 @@ td.num { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: #1ABC9
         <div class="jack-info">
           <div class="jack-name">JACK HINSHELWOOD</div>
           <div class="jack-sub">Brighton &amp; Hove Albion, Premier League · England Under-21 · Championship Euro Winner</div>
-          <p style="font-size:0.88rem;color:#CBD5E0;line-height:1.65;margin-bottom:1rem;">An active Premier League player with equity in SHOT. His career was shaped by the coaches and systems SHOT is now making accessible at grassroots level.</p>        </div>
-      </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.06);border-radius:0.75rem;overflow:hidden;margin-top:1px;">
-        <div class="team-card">
-          <img src="https://live.staticflickr.com/65535/54829800017_0de4657051_b.jpg" alt="Mark Beard" class="team-avatar" style="border-color:rgba(247,182,19,0.3);">
-          <div>
-            <div class="team-name">Mark Beard</div>
-            <div class="team-role" style="color:#F7B613;">Ambassador &amp; Shareholder</div>
-            <div class="team-bio">Premier League academy coach and former professional footballer.</div>
-          </div>
-        </div>
-        <div class="team-card">
-          <img src="https://live.staticflickr.com/65535/54830977075_b5e9c4b103_b.jpg" alt="Varsha Bailey-Gunputh" class="team-avatar" style="border-color:rgba(247,182,19,0.3);">
-          <div>
-            <div class="team-name">Varsha Bailey-Gunputh</div>
-            <div class="team-role" style="color:#F7B613;">Ambassador &amp; Shareholder</div>
-            <div class="team-bio">Award-winning Lioness Under-16 goalkeeper coach.</div>
-          </div>
-        </div>
-        <div class="team-card">
-          <img src="https://live.staticflickr.com/65535/54830644836_1cfd217010_b.jpg" alt="Eilish Tierney" class="team-avatar" style="border-color:rgba(247,182,19,0.3);">
-          <div>
-            <div class="team-name">Eilish Tierney</div>
-            <div class="team-role" style="color:#F7B613;">Ambassador &amp; Shareholder</div>
-            <div class="team-bio">Suffolk's first professional female boxer. Britain's trailblazer.</div>
-          </div>
+          <p style="font-size:0.88rem;color:#CBD5E0;line-height:1.65;margin-bottom:1rem;">An active Premier League player and one of our SHOT icons. His career was shaped by the coaches and systems SHOT is now making accessible at grassroots level. That connection, from elite academy to grassroots, is exactly what Sport Head ID is built for.</p>
         </div>
       </div>
     </div>
@@ -489,138 +378,34 @@ td.num { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: #1ABC9
 
   <hr class="rule">
 
-  <!-- THE ROUND -->
+  <!-- THE INVESTMENT -->
   <div class="sec">
-    <div class="label">The Round</div>
-    <h2 class="sec-heading" style="margin-bottom:1.5rem;">TAKE YOUR SHOT.<br><span style="color:#1ABC9C;">OWN IT.</span> <span style="color:#F7B613;">MAKE IMPACT.</span></h2>
+    <div class="label">The Investment</div>
+    <h2 class="sec-heading">TAKE YOUR SHOT.<br><span style="color:#1ABC9C;">OWN IT.</span> <span style="color:#F7B613;">MAKE IMPACT.</span></h2>
     <div class="round-stats">
-      <div class="round-stat">
-        <div class="round-stat-label">Pre-Money</div>
-        <div class="round-stat-val" style="color:#fff;">£16M</div>
-      </div>
-      <div class="round-stat">
-        <div class="round-stat-label">Available Now</div>
-        <div class="round-stat-val" style="color:#F7B613;">£725K</div>
-      </div>
-      <div class="round-stat">
-        <div class="round-stat-label">Paying from</div>
-        <div class="round-stat-val" style="color:#1ABC9C;font-size:1.5rem;line-height:1.1;">Aug<br>2026</div>
-      </div>
+      <div class="round-stat"><div class="round-stat-label">Pre-Money</div><div class="round-stat-val" style="color:#fff;">£16M</div></div>
+      <div class="round-stat"><div class="round-stat-label">Available Now</div><div class="round-stat-val" style="color:#F7B613;">£725K</div></div>
+      <div class="round-stat"><div class="round-stat-label">Paying From</div><div class="round-stat-val" style="color:#1ABC9C;font-size:1.5rem;line-height:1.1;">Aug<br>2026</div></div>
     </div>
     <div class="table-wrap">
-      <table>
-        <tbody>
-          <tr>
-            <td>Total raise</td>
-            <td class="num">£800,000</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Already raised</td>
-            <td class="num" style="color:#6B7280;">£75,000</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Available now</td>
-            <td class="num">£725,000</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Pre-money valuation</td>
-            <td class="num">£16,000,000</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>SEIS tax relief</td>
-            <td class="num" style="color:#a78bfa;">50%</td>
-            <td>Income tax relief on investment up to £200,000</td>
-          </tr>
-          <tr>
-            <td>EIS tax relief</td>
-            <td class="num" style="color:#a78bfa;">30%</td>
-            <td>Income tax relief on investment up to £1M</td>
-          </tr>
-          <tr>
-            <td>Paying from</td>
-            <td class="num" style="color:#1ABC9C;">August 2026</td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
+      <table><tbody>
+        <tr><td>Total raise</td><td class="num">£800,000</td><td>£75,000 in. £725,000 available now.</td></tr>
+        <tr><td>SEIS relief</td><td class="num" style="color:#a78bfa;">50%</td><td>On investment up to £200,000</td></tr>
+        <tr><td>EIS relief</td><td class="num" style="color:#a78bfa;">30%</td><td>On investment up to £1M</td></tr>
+      </tbody></table>
+    </div>
+    <p class="body-text" style="margin-top:1.5rem;font-size:0.85rem;color:#9CA3AF;">Illustrative gross returns at entry, before dilution. Not a forecast.</p>
+    <div class="table-wrap" style="margin-top:0.5rem;">
+      <table><tbody>
+        <tr><td>Trade sale</td><td class="num">£150M</td><td class="num" style="color:#1ABC9C;">~9x</td></tr>
+        <tr><td>Growth exit</td><td class="num">£500M</td><td class="num" style="color:#F7B613;">~31x</td></tr>
+        <tr><td>Category leader</td><td class="num">£1.5B</td><td class="num" style="color:#a78bfa;">~94x</td></tr>
+      </tbody></table>
     </div>
 
-    <div style="border-left:3px solid #F7B613;padding:1rem 1.25rem;margin-top:2rem;background:rgba(247,182,19,0.04);border-radius:0 0.5rem 0.5rem 0;">
-      <p style="color:#CBD5E0;font-size:0.95rem;line-height:1.7;margin:0;font-style:italic;">"Our ambition is to build a double-digit, multi-billion-pound sport entity that powers every fan, every athlete, every coach, every club, every parent to take their shot, own it, and make an impact."</p>
-    </div>
-  </div>
-
-  <hr class="rule">
-
-  <!-- EXIT OPPORTUNITIES -->
-  <div class="sec">
-    <div class="label">Exit Opportunities</div>
-    <h2 class="sec-heading" style="margin-bottom:0.5rem;">INDICATIVE INVESTOR RETURNS.</h2>
-    <p class="body-text" style="margin-bottom:1.5rem;">For an investor entering at today's £16M pre-money valuation, the table below shows illustrative gross returns at milestone company valuations. Figures are before dilution from subsequent rounds and are not a forecast or guarantee of return.</p>
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th>Milestone</th>
-            <th>Company Valuation</th>
-            <th>Gross multiple</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Strategic acquisition or trade sale</td>
-            <td class="num">£150M</td>
-            <td class="num" style="color:#1ABC9C;">~9x</td>
-          </tr>
-          <tr>
-            <td>Series A secondary / growth exit</td>
-            <td class="num">£500M</td>
-            <td class="num" style="color:#F7B613;">~31x</td>
-          </tr>
-          <tr>
-            <td>Category-leader exit</td>
-            <td class="num">£1.5B</td>
-            <td class="num" style="color:#a78bfa;">~94x</td>
-          </tr>
-          <tr>
-            <td>IPO or global platform acquisition</td>
-            <td class="num">£10B+</td>
-            <td class="num" style="color:#a78bfa;">~625x</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <p style="font-size:0.78rem;color:#6B7280;margin-top:1rem;line-height:1.6;">Illustrative only. Gross multiples on entry valuation, before dilution from future funding rounds. SEIS and EIS tax relief reduces the effective cost basis further. Investing in early-stage companies carries significant risk including total loss of capital. This page does not constitute financial advice.</p>
-  </div>
-
-  <hr class="rule">
-
-  <!-- GET IN TOUCH -->
-  <div class="sec">
-    <div class="label">Get In Touch</div>
-    <h2 class="sec-heading" style="margin-bottom:0.5rem;">READY TO TALK?</h2>
-    <p class="body-text" style="margin-bottom:0;">Reach either founder directly.</p>
     <div class="contact-grid">
-      <div class="contact-card">
-        <img src="https://pitchdeck.shotclubhouse.com/Liam%20McDowell%20-%20Headshot%20SHOT%20Cap%20Teal.png" alt="Liam McDowell" class="contact-avatar">
-        <div>
-          <div class="contact-name">Liam McDowell</div>
-          <div class="contact-role">Founder</div>
-          <div class="contact-line"><a href="mailto:liam@shotclubhouse.com">liam@shotclubhouse.com</a></div>
-        </div>
-      </div>
-      <div class="contact-card">
-        <img src="https://pitchdeck.shotclubhouse.com/phil%20(2).png" alt="Philip Gault" class="contact-avatar">
-        <div>
-          <div class="contact-name">Philip Gault</div>
-          <div class="contact-role">Co-Founder</div>
-          <div class="contact-line"><a href="mailto:phil@shotclubhouse.com">phil@shotclubhouse.com</a></div>
-        </div>
-      </div>
+      <div class="contact-card"><img src="https://pitchdeck.shotclubhouse.com/Liam%20McDowell%20-%20Headshot%20SHOT%20Cap%20Teal.png" alt="Liam McDowell" class="contact-avatar"><div><div class="contact-name">Liam McDowell</div><div class="contact-role">Founder</div><div class="contact-line"><a href="mailto:liam@shotclubhouse.com">liam@shotclubhouse.com</a></div></div></div>
+      <div class="contact-card"><img src="https://pitchdeck.shotclubhouse.com/phil%20(2).png" alt="Philip Gault" class="contact-avatar"><div><div class="contact-name">Philip Gault</div><div class="contact-role">Co-Founder</div><div class="contact-line"><a href="mailto:phil@shotclubhouse.com">phil@shotclubhouse.com</a></div></div></div>
     </div>
     <div class="links-row">
       <div class="link-line"><span class="link-label">Website</span><a href="https://shotclubhouse.com" target="_blank" rel="noopener">shotclubhouse.com</a></div>
