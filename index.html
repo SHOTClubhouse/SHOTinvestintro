@@ -67,7 +67,9 @@ a:hover { text-decoration: underline; }
 .market-val { font-family: 'Bebas Neue', sans-serif; font-size: 1.9rem; letter-spacing: 0.04em; line-height: 1; }
 .market-desc { font-size: 0.8rem; color: #9CA3AF; line-height: 1.55; margin-top: 0.45rem; }
 
-@media (max-width: 640px) { .shid-row { grid-template-columns: 1fr; } .shid-row video { max-width: 160px; margin: 0 auto; } }
+.opp-row { display: grid; grid-template-columns: 1fr 260px; gap: 2rem; align-items: center; margin-top: 1.25rem; }
+
+@media (max-width: 640px) { .shid-row { grid-template-columns: 1fr; } .shid-row video { max-width: 160px; margin: 0 auto; } .opp-row { grid-template-columns: 1fr; } .opp-row video { max-width: 240px; margin: 0 auto; } }
 
 /* Table */
 .table-wrap { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.07); border-radius: 0.75rem; overflow: hidden; margin-top: 1.5rem; }
@@ -140,6 +142,7 @@ td.num { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: #1ABC9
 
 /* Cover */
 .cover { padding: 4rem 0 3rem; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.cover-hero { position: relative; padding: 4rem 0 3rem; border-bottom: 1px solid rgba(255,255,255,0.08); background: linear-gradient(rgba(0,0,0,0.82), rgba(0,0,0,0.9)), url('https://res.cloudinary.com/shotclubhouse/image/upload/v1782214159/The_SHOT_ndjpgc.png'); background-size: cover; background-position: center; background-repeat: no-repeat; }
 .cover-wordmark { font-size: clamp(2.8rem, 8vw, 5rem); line-height: 0.86; color: #fff; margin-bottom: 0.75rem; }
 
 @media (max-width: 640px) {
@@ -157,10 +160,9 @@ td.num { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: #1ABC9
 </head>
 <body>
 
-<div class="page">
-
-  <!-- COVER -->
-  <div class="cover">
+<!-- COVER (full-bleed hero) -->
+<div class="cover-hero">
+  <div class="page">
     <img src="https://shotclubhouse.com/shot-logo.png" alt="SHOT Clubhouse" style="height:48px;width:auto;margin-bottom:1.25rem;display:block;">
     <h1 class="cover-wordmark">SHOT <span style="color:#1ABC9C;">CLUBHOUSE</span></h1>
     <p class="body-text" style="color:#fff;font-weight:500;max-width:600px;font-size:1.05rem;">The verified identity and digital home for every athlete, coach, club and fan on the planet. Live now.</p>
@@ -173,15 +175,23 @@ td.num { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: #1ABC9
       <span class="pill">Live on Google Play &amp; App Store</span>
     </div>
   </div>
+</div>
 
-  <hr class="rule">
+<div class="page">
 
   <!-- THE ONE TRUE HOME FOR SPORT -->
   <div class="sec">
     <div class="label">The Opportunity</div>
     <h2 class="sec-heading">THE ONE TRUE<br><span style="color:#1ABC9C;">HOME FOR SPORT.</span></h2>
-    <p class="body-text">Sport is the largest community on the planet. Five billion people. Every continent. Every age. And it has no infrastructure layer. No portable identity. No safe space online. No single platform connecting clubs, coaches, athletes, parents and fans.</p>
-    <p class="body-text" style="color:#fff;font-weight:500;margin-top:1.25rem;">SHOT is the global ecosystem.</p>
+    <div class="opp-row">
+      <div>
+        <p class="body-text">Sport is the largest community on the planet. Five billion people. Every continent. Every age. And it has no infrastructure layer. No portable identity. No safe space online. No single platform connecting clubs, coaches, athletes, parents and fans.</p>
+        <p class="body-text" style="color:#fff;font-weight:500;margin-top:1.25rem;">SHOT is the global ecosystem.</p>
+      </div>
+      <video autoplay loop muted playsinline style="width:100%;border-radius:0.75rem;display:block;background:#0a0a0a;">
+        <source src="https://res.cloudinary.com/shotclubhouse/video/upload/v1782214857/WhatsApp_Video_2025-09-11_at_14.21.49_6b002c54_fthoxo.mp4" type="video/mp4">
+      </video>
+    </div>
   </div>
 
   <hr class="rule">
@@ -211,6 +221,7 @@ td.num { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: #1ABC9
         <source src="https://res.cloudinary.com/shotclubhouse/video/upload/v1781937738/download_muf1sb.mp4" type="video/mp4">
       </video>
     </div>
+    <img src="https://res.cloudinary.com/shotclubhouse/image/upload/v1782214781/WhatsApp_Image_2026-06-20_at_11.13.30_h1owxj.jpg" alt="Sport Heads across every sport" style="width:100%;border-radius:0.75rem;margin-top:1.75rem;display:block;background:#0a0a0a;">
   </div>
 
   <hr class="rule">
@@ -236,9 +247,12 @@ td.num { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: #1ABC9
       </div>
     </div>
 
-    <div style="display:flex;gap:1.1rem;align-items:center;border:1px solid rgba(167,139,250,0.25);border-radius:0.75rem;background:rgba(167,139,250,0.05);padding:1rem 1.25rem;margin-top:1rem;">
-      <img src="https://res.cloudinary.com/shotclubhouse/image/upload/v1781938692/alex_rrkv6v.png" alt="ALEX AI" style="height:96px;width:auto;border-radius:0.5rem;flex-shrink:0;object-fit:contain;background:#0a0a0a;">
-      <div>
+    <div style="display:flex;gap:1.1rem;align-items:center;flex-wrap:wrap;border:1px solid rgba(167,139,250,0.25);border-radius:0.75rem;background:rgba(167,139,250,0.05);padding:1rem 1.25rem;margin-top:1rem;">
+      <div style="display:flex;gap:0.6rem;flex-shrink:0;background:#0a0a0a;border-radius:0.6rem;padding:0.5rem;">
+        <img src="https://res.cloudinary.com/shotclubhouse/image/upload/v1782214500/TM_IPO_cmwilq.png" alt="Sport Head character" style="height:120px;width:120px;object-fit:cover;border-radius:0.5rem;display:block;">
+        <img src="https://res.cloudinary.com/shotclubhouse/image/upload/v1781938692/alex_rrkv6v.png" alt="ALEX AI" style="height:120px;width:auto;border-radius:0.5rem;object-fit:contain;display:block;">
+      </div>
+      <div style="flex:1;min-width:220px;">
         <div style="font-family:'Bebas Neue',sans-serif;font-size:1.2rem;color:#a78bfa;letter-spacing:0.06em;margin-bottom:0.2rem;">ALEX AI</div>
         <div style="font-size:0.85rem;color:#9CA3AF;line-height:1.6;">Your personal assistant, helper, motivator and support across every area of the Clubhouse.</div>
       </div>
